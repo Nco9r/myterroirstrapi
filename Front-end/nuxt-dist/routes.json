@@ -1,0 +1,135 @@
+[
+  {
+    "name": "blogs",
+    "path": "/blogs",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/blogs/index.vue",
+    "chunkName": "pages/blogs/index",
+    "_name": "_723f10fd"
+  },
+  {
+    "name": "boutique",
+    "path": "/boutique",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/boutique/index.vue",
+    "chunkName": "pages/boutique/index",
+    "_name": "_4ac125ce"
+  },
+  {
+    "name": "conditions-generales-ventes",
+    "path": "/conditions-generales-ventes",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/conditions-generales-ventes.vue",
+    "chunkName": "pages/conditions-generales-ventes",
+    "_name": "_6e61d050"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_1221856e"
+  },
+  {
+    "name": "mentions-legales",
+    "path": "/mentions-legales",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/mentions-legales.vue",
+    "chunkName": "pages/mentions-legales",
+    "_name": "_6d8514ca"
+  },
+  {
+    "name": "politique-confidentialite",
+    "path": "/politique-confidentialite",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/politique-confidentialite.vue",
+    "chunkName": "pages/politique-confidentialite",
+    "_name": "_f403e6c4"
+  },
+  {
+    "name": "producteurs",
+    "path": "/producteurs",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/producteurs/index.vue",
+    "chunkName": "pages/producteurs/index",
+    "_name": "_715ade68"
+  },
+  {
+    "name": "strapi",
+    "path": "/strapi",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/strapi/index.vue",
+    "chunkName": "pages/strapi/index",
+    "_name": "_5c3ac39a"
+  },
+  {
+    "name": "traiteur",
+    "path": "/traiteur",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/traiteur/index.vue",
+    "chunkName": "pages/traiteur/index",
+    "_name": "_ada3a144"
+  },
+  {
+    "name": "blogs-comment-organiser-vos-reception",
+    "path": "/blogs/comment-organiser-vos-reception",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/blogs/comment-organiser-vos-reception.vue",
+    "chunkName": "pages/blogs/comment-organiser-vos-reception",
+    "_name": "_7c6386f4"
+  },
+  {
+    "name": "boutique-checkout",
+    "path": "/boutique/checkout",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/boutique/checkout.vue",
+    "chunkName": "pages/boutique/checkout",
+    "_name": "_ed97020c"
+  },
+  {
+    "name": "producteurs-ferme-ekiola",
+    "path": "/producteurs/ferme-ekiola",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/producteurs/ferme-ekiola.vue",
+    "chunkName": "pages/producteurs/ferme-ekiola",
+    "_name": "_4c58a6d9"
+  },
+  {
+    "name": "producteurs-ferme-elizaldia",
+    "path": "/producteurs/ferme-elizaldia",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/producteurs/ferme-elizaldia.vue",
+    "chunkName": "pages/producteurs/ferme-elizaldia",
+    "_name": "_30465b71"
+  },
+  {
+    "name": "producteurs-fromagerie-aldudes",
+    "path": "/producteurs/fromagerie-aldudes",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/producteurs/fromagerie-aldudes.vue",
+    "chunkName": "pages/producteurs/fromagerie-aldudes",
+    "_name": "_67022118"
+  },
+  {
+    "name": "producteurs-maison-laborie",
+    "path": "/producteurs/maison-laborie",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/producteurs/maison-laborie.vue",
+    "chunkName": "pages/producteurs/maison-laborie",
+    "_name": "_1fe17812"
+  },
+  {
+    "name": "blogs-slug",
+    "path": "/blogs/:slug",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/blogs/_slug.vue",
+    "chunkName": "pages/blogs/_slug",
+    "_name": "_70886fb5"
+  },
+  {
+    "name": "cat-slug",
+    "path": "/cat/:slug?",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/cat/_slug.vue",
+    "chunkName": "pages/cat/_slug",
+    "_name": "_587b887a"
+  },
+  {
+    "name": "categories-slug",
+    "path": "/categories/:slug?",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/categories/_slug.vue",
+    "chunkName": "pages/categories/_slug",
+    "_name": "_7f2af57e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/Front-end/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_347c093b"
+  }
+]

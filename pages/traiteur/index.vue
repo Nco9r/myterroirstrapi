@@ -1341,7 +1341,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .block_traiteur {
     max-width: 1400px;
     margin: auto;

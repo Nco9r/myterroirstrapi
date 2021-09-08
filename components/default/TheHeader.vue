@@ -19,11 +19,7 @@
               to="/traiteur"
               >Traiteur</nuxt-link
             >
-            <nuxt-link
-              :class="{ items_menu_scroll: scrollPosition > 100 }"
-              to="/producteurs"
-              >Producteurs</nuxt-link
-            >
+
             <nuxt-link
               :class="{ items_menu_scroll: scrollPosition > 100 }"
               to="/blogs"
@@ -68,13 +64,14 @@
               <p>MENU</p>
               <nuxt-link to="/">Accueil</nuxt-link>
               <nuxt-link to="/traiteur">Traiteur</nuxt-link>
-              <nuxt-link to="/producteurs">Producteurs</nuxt-link>
               <nuxt-link to="/blogs">Blog</nuxt-link>
               <nuxt-link to="/boutique">Boutique</nuxt-link>
             </div>
             <hr />
             <div class="button_contact">
-              <button @click="devis = !devis, openMenu = !openMenu">Obtenir mon devis</button>
+              <button @click="(devis = !devis), (openMenu = !openMenu)">
+                Obtenir mon devis
+              </button>
             </div>
             <div class="sociaux">
               <p>NOUS SUIVRE</p>
@@ -98,43 +95,43 @@
         </transition>
       </div>
     </header>
-    <Cart v-if="cart" :cart=cart />
-    <devisHeader :devis=devis v-if="devis" />
+    <Cart v-if="cart" :cart="cart" />
+    <devisHeader :devis="devis" v-if="devis" />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import Cart from '../boutique/cart'
-import devisHeader from '../default/devisHeader'
+import { mapGetters } from "vuex";
+import Cart from "../boutique/cart";
+import devisHeader from "../default/devisHeader";
 export default {
-  name: 'TheHeader',
+  name: "TheHeader",
   components: {
     Cart,
-    devisHeader
+    devisHeader,
   },
   data() {
     return {
       openMenu: false,
       scrollPosition: null,
       cart: false,
-      devis: false
-    }
+      devis: false,
+    };
   },
   computed: {
     carts() {
-      return this.$store.state.cart.datas
-    }
+      return this.$store.state.cart.datas;
+    },
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll)
+    window.addEventListener("scroll", this.updateScroll);
   },
   methods: {
     updateScroll() {
-      this.scrollPosition = window.scrollY
-    }
-  }
-}
+      this.scrollPosition = window.scrollY;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -149,7 +146,6 @@ header {
 
 .top_bar_color {
   background-color: var(--white);
-
 }
 
 .top_bar_flex {
@@ -182,7 +178,7 @@ header {
   left: 0;
   right: 0;
   background-color: var(--black);
-  background-image: url('~assets/img/png/texture_mt.png');
+  background-image: url("~assets/img/png/texture_mt.png");
   height: 100%;
   overflow-y: scroll;
   z-index: 2;
@@ -259,12 +255,10 @@ header {
   from {
     opacity: 0;
     transform: translateY(20px);
-
   }
   to {
     opacity: 1;
     transform: translateY(0px);
- 
   }
 }
 
@@ -552,21 +546,18 @@ hr {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .block_header {
     max-width: 1200px;
     margin: auto;
     padding: 20px 0;
-}
+  }
 }
 @media screen and (min-width: 1400px) {
   .block_header {
     max-width: 1400px;
     margin: auto;
     padding: 20px 0;
-}
-
-  
+  }
 }
 </style>

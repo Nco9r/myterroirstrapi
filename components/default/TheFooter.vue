@@ -22,7 +22,7 @@
             </div>
             <div class="content_item">
               <nuxt-link to="/traiteur"><p>Traiteur</p></nuxt-link>
-              <nuxt-link to="/blog"><p>Blog</p></nuxt-link>
+              <nuxt-link to="/blogs"><p>Blog</p></nuxt-link>
               <nuxt-link to="/boutique"><p>Boutique</p></nuxt-link>
               <nuxt-link to="/contact"><p>Contact</p></nuxt-link>
             </div>

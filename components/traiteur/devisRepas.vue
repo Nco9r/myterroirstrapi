@@ -164,6 +164,30 @@ export default {
 <style scoped>
 /* TRANSITION */
 
+.goodNews {
+  background-color: rgb(242, 255, 242);
+  color: green;
+  padding: 20px 25px;
+  width: 100%;
+  font-size: 14px;
+  margin: 0px auto 20px auto;
+}
+
+.error {
+  background-color: rgb(255, 206, 206);
+  color: rgb(128, 0, 0);
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.loading {
+  pointer-events: none;
+  opacity: 0.2;
+}
+/* TRANSITION */
+
 .overlay-enter-active {
   animation: openOverlay 0.3s ease-in-out;
 }
@@ -207,6 +231,17 @@ export default {
   }
 }
 
+.intro {
+  cursor: pointer;
+}
+
+.intro_form {
+  font-size: 13px;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
 .intro p {
   font-size: 14px;
   font-family: bodyBold, sans-serif;
@@ -237,35 +272,18 @@ form {
 }
 
 .label p {
-  padding: 10px 0 5px 5px;
+  padding: 10px 0 8px 5px;
   font-size: 12px;
-  color: var(--black);
-  font-family: bodyBold, sans-serif;
+  color: var(--Body);
+  font-family: bodyBold;
 }
 
 .label input {
   width: 100%;
   border: none;
   background-color: white;
-  padding: 10px 8px;
-  font-size: 16px;
-  outline: none;
-  border-radius: 0px;
-  -webkit-appearance: none;
-}
-
-.intro_form {
-  font-size: 13px;
-  line-height: 26px;
-  color: var(--black);
-  margin-bottom: 20px;
-}
-
-.label textarea {
-  width: 100%;
-  border: none;
-  background-color: white;
-  padding: 10px 8px;
+  padding: 16px 19px;
+  border: 1px solid var(--gray-light);
   font-size: 16px;
   outline: none;
   border-radius: 0px;
@@ -273,17 +291,28 @@ form {
 }
 
 .label input::placeholder {
-  font-family: body, sans-serif;
-  color: var(--black);
   font-size: 11px;
   opacity: 0.4;
+  font-family: body, sans-serif;
 }
 
-.label textarea::placeholder {
+.label textarea {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 16px 19px;
+  font-size: 16px;
   font-family: body, sans-serif;
-  color: var(--black);
-  font-size: 11px;
+  outline: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+
+.label textarea::placeholder {
+    font-size: 11px;
   opacity: 0.4;
+  font-family: body, sans-serif;
 }
 
 .title_form_two h4 {
@@ -297,17 +326,20 @@ form {
 }
 
 select {
-  width: 100%;
-  border: none;
-  border-radius: 0px;
-  background-color: var(--black);
-  margin-top: -1px;
   -webkit-appearance: none;
+  padding: 18px 14px;
+  background-color: var(--black);
+  color: var(--white);
+  background-image: url('~/assets/img/svg/dropdown.svg');
   outline: none;
-  font-size: 16px;
-  padding: 10px 16px;
-  color: white;
-  font-weight: bold;
+  width: 100%;
+  font-family: bodyBold, sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 92% 48%;
+  background-size: 22px;
 }
 
 .check {
@@ -360,7 +392,6 @@ input[type='checkbox' i]:checked::after {
   font-family: bodyBold, sans-serif;
   background-color: var(--orange);
   border: none;
-
   text-decoration: none;
   color: var(--white);
   font-size: 14px;
@@ -371,7 +402,6 @@ input[type='checkbox' i]:checked::after {
 }
 
 .btn_form button:hover {
-
   background-color: var(--black);
 }
 
@@ -391,6 +421,7 @@ input[type='checkbox' i]:checked::after {
     form {
     padding: 15px 65px;
 }
+
  .devis_mobile {
     width: 70%;
     margin: auto; 
@@ -398,7 +429,7 @@ input[type='checkbox' i]:checked::after {
     
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .devis_mobile {
     position: absolute;
     bottom: 0;
@@ -409,8 +440,34 @@ input[type='checkbox' i]:checked::after {
     overflow: scroll;
   }
 
+  form {
+    padding: 15px 65px; 
+  }
+
   .intro {
     padding: 15px 50px;
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .devis_mobile {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 20;
+    width: 40%;
+    overflow: scroll;
+  }
+
+  form {
+    padding: 15px 65px; 
+  }
+
+  .intro {
+    padding: 15px 50px;
+
   }
 }
 </style>

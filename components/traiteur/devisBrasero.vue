@@ -290,8 +290,8 @@ form {
 }
 
 .label input::placeholder {
-  font-size: 14px;
-  color: var(--hint);
+  font-size: 11px;
+  opacity: 0.4;
   font-family: body, sans-serif;
 }
 
@@ -299,8 +299,9 @@ form {
   width: 100%;
   border: none;
   background-color: white;
-  padding: 10px 8px;
+  padding: 16px 19px;
   font-size: 16px;
+  font-family: body, sans-serif;
   outline: none;
   border-radius: 0px;
   -webkit-appearance: none;
@@ -308,10 +309,9 @@ form {
 
 
 .label textarea::placeholder {
-  font-family: body, sans-serif;
-  color: var(--black);
-  font-size: 11px;
+    font-size: 11px;
   opacity: 0.4;
+  font-family: body, sans-serif;
 }
 
 .title_form_two h4 {
@@ -428,7 +428,28 @@ input[type='checkbox' i]:checked::after {
     
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
+  .devis_mobile {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 20;
+    width: 50%;
+    overflow: scroll;
+  }
+
+  form {
+    padding: 15px 65px; 
+  }
+
+  .intro {
+    padding: 15px 50px;
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .devis_mobile {
     position: absolute;
     bottom: 0;

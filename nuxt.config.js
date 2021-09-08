@@ -1,4 +1,4 @@
-const strapiBaseUri = process.env.API_URL || 'http://localhost:7878'
+const strapiBaseUri = process.env.API_URL || 'https://admin-myterroir.fr/'
 
 module.exports = {
   mode: 'universal',

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { Strapi } from '~strapi'
 
-const options = {"url":"http://localhost:7878","entities":["producteur","blogs","categoriesblogs"],"key":"strapi_jwt","expires":"session","cookie":{}}
+const options = {"url":"https://admin-myterroir.fr/","entities":["producteur","blogs","categoriesblogs"],"key":"strapi_jwt","expires":"session","cookie":{}}
 
 options.entities.forEach((entity) => {
   let key

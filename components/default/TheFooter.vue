@@ -22,30 +22,19 @@
             </div>
             <div class="content_item">
               <nuxt-link to="/traiteur"><p>Traiteur</p></nuxt-link>
-              <nuxt-link to="/producteurs"><p>Producteurs</p></nuxt-link>
               <nuxt-link to="/blog"><p>Blog</p></nuxt-link>
               <nuxt-link to="/boutique"><p>Boutique</p></nuxt-link>
+              <nuxt-link to="/contact"><p>Contact</p></nuxt-link>
             </div>
           </div>
           <div class="item">
             <div class="title_item">
-              <p>Contact</p>
+              <p>Nos produits</p>
             </div>
-            <div class="content_item">
-              <a href="tel:+33754827676"><p>+33 (0)7 54 82 76 76</p></a>
-              <a
-                href="mailto:contact@my-terroir.fr?subject=Demande de contact site web."
-                ><p>contact@my-terroir.fr</p></a
-              >
-              <a
-                href="https://ul.waze.com/ul?place=Ei00ODIgUnVlIGR1IENvdXJkb3VuZXksIDMzMTQwIENhZGF1amFjLCBGcmFuY2UiURJPCjQKMgljQ41WnSFVDREmH0OhPx9VCRoeCxDuwe6hARoUChIJ7WD-BTghVQ0R0IivkRplBhwMEOIDKhQKEglz1V5xeCFVDRGm2dFzEAWfJg&ll=44.73625560%2C-0.53585240&navigate=yes&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
-                ><p>
-                  482 rue du Courdonney <br />
-                  33140 Cadaujac
-                </p></a
-                
-              >
-              <p>du Lundi au Vendredi <br> de 9h à 18h</p>
+           <div class="content_item">
+              <nuxt-link to="/cat/nos-fromages"><p>Nos fromages</p></nuxt-link>
+              <nuxt-link to="/cat/nos-viandes"><p>Nos viandes</p></nuxt-link>
+              <nuxt-link to="/cat/notre-charcuterie"><p>Notre charcuterie</p></nuxt-link>
             </div>
           </div>
           <div class="item">

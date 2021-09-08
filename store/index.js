@@ -47,9 +47,6 @@ addProductQuantity(state, id) {
 },
 removeQuantity(state, id) {
   const index = state.allProducts.findIndex((d) => d.id === id)
-  if (index === 0) {
-    state.allProducts[index].splice(index, 1)
-  }
   state.allProducts[index].quantite--
 }
   }

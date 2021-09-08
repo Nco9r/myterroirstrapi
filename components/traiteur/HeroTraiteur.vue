@@ -257,7 +257,7 @@ export default {
 
     font-family: bodyBold, sans-serif;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .block_content h1 {
@@ -294,7 +294,7 @@ export default {
   @media screen and (min-width: 1400px) {
   .getBlog {
     max-width: 1400px;
-    margin: 120px auto 700px auto;
+    margin: 120px auto 650px auto;
   }
 
 }

@@ -1,12 +1,11 @@
 export const state = () => ({
   datas: [
     {
-      product: 'Jambon de Bayonne 12 mois chiffonnade',
-      weight: '100 GR',
-      price: 3.9,
-      name: 'La ferme Elizaldia',
-      quantity: 1,
-      id: 1
+      name: "Jambon de Bayonne 12 mois chiffonnade",
+      poids: "Les 100g",
+      prix: 3.9,
+      producteurs: "La ferme Elizaldia",
+      quantite: 1,
     },
     {
       product: 'Jambon de Bayonne 12 mois tranché sous-vide',

@@ -189,7 +189,6 @@ export default {
   pointer-events: none;
   opacity: 0.2;
 }
-
 /* TRANSITION */
 
 .overlay-enter-active {
@@ -234,6 +233,11 @@ export default {
     transform: translateY(0);
   }
 }
+
+.intro {
+  cursor: pointer;
+}
+
 .intro_form {
   font-size: 13px;
   line-height: 26px;
@@ -271,28 +275,18 @@ form {
 }
 
 .label p {
-  padding: 10px 0 5px 5px;
+  padding: 10px 0 8px 5px;
   font-size: 12px;
-  color: var(--black);
-  font-family: bodyBold, sans-serif;
+  color: var(--Body);
+  font-family: bodyBold;
 }
 
 .label input {
   width: 100%;
   border: none;
   background-color: white;
-  padding: 10px 8px;
-  font-size: 16px;
-  outline: none;
-  border-radius: 0px;
-  -webkit-appearance: none;
-}
-
-.label textarea {
-  width: 100%;
-  border: none;
-  background-color: white;
-  padding: 10px 8px;
+  padding: 16px 19px;
+  border: 1px solid var(--gray-light);
   font-size: 16px;
   outline: none;
   border-radius: 0px;
@@ -300,17 +294,28 @@ form {
 }
 
 .label input::placeholder {
-  font-family: body, sans-serif;
-  color: var(--black);
   font-size: 11px;
   opacity: 0.4;
+  font-family: body, sans-serif;
 }
 
-.label textarea::placeholder {
+.label textarea {
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 16px 19px;
+  font-size: 16px;
   font-family: body, sans-serif;
-  color: var(--black);
-  font-size: 11px;
+  outline: none;
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
+
+
+.label textarea::placeholder {
+    font-size: 11px;
   opacity: 0.4;
+  font-family: body, sans-serif;
 }
 
 .title_form_two h4 {
@@ -324,17 +329,20 @@ form {
 }
 
 select {
-  width: 100%;
-  border: none;
-  border-radius: 0px;
-  background-color: var(--black);
-  margin-top: -1px;
   -webkit-appearance: none;
+  padding: 18px 14px;
+  background-color: var(--black);
+  color: var(--white);
+  background-image: url('~/assets/img/svg/dropdown.svg');
   outline: none;
-  font-size: 16px;
-  padding: 10px 16px;
-  color: white;
-  font-weight: bold;
+  width: 100%;
+  font-family: bodyBold, sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background-repeat: no-repeat;
+  background-position: 92% 48%;
+  background-size: 22px;
 }
 
 .check {
@@ -396,40 +404,73 @@ input[type='checkbox' i]:checked::after {
   outline: none;
 }
 
+.btn_form button:hover {
+  background-color: var(--black);
+}
+
 .btn_form button svg {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  form {
+@media screen and (min-width: 768px){
+    form {
     padding: 15px 75px;
-  }
 }
 
-@media screen and (min-width: 1024px) {
-  form {
-    padding: 15px 65px;
-  }
+    
+}
 
-  .devis_mobile {
+@media screen and (min-width: 1024px){
+    form {
+    padding: 15px 65px;
+}
+
+ .devis_mobile {
     width: 70%;
     margin: auto; 
   }
+    
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .devis_mobile {
     position: absolute;
     bottom: 0;
     margin: auto;
-    width: 50%;
     position: fixed;
     z-index: 20;
+    width: 50%;
     overflow: scroll;
+  }
+
+  form {
+    padding: 15px 65px; 
   }
 
   .intro {
     padding: 15px 50px;
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .devis_mobile {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    position: fixed;
+    z-index: 20;
+    width: 40%;
+    overflow: scroll;
+  }
+
+  form {
+    padding: 15px 65px; 
+  }
+
+  .intro {
+    padding: 15px 50px;
+
   }
 }
 </style>

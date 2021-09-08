@@ -4,25 +4,25 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _723f10fd = () => interopDefault(import('../pages/blogs/index.vue' /* webpackChunkName: "pages/blogs/index" */))
-const _4ac125ce = () => interopDefault(import('../pages/boutique/index.vue' /* webpackChunkName: "pages/boutique/index" */))
-const _6e61d050 = () => interopDefault(import('../pages/conditions-generales-ventes.vue' /* webpackChunkName: "pages/conditions-generales-ventes" */))
-const _1221856e = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _6d8514ca = () => interopDefault(import('../pages/mentions-legales.vue' /* webpackChunkName: "pages/mentions-legales" */))
-const _f403e6c4 = () => interopDefault(import('../pages/politique-confidentialite.vue' /* webpackChunkName: "pages/politique-confidentialite" */))
-const _715ade68 = () => interopDefault(import('../pages/producteurs/index.vue' /* webpackChunkName: "pages/producteurs/index" */))
-const _5c3ac39a = () => interopDefault(import('../pages/strapi/index.vue' /* webpackChunkName: "pages/strapi/index" */))
-const _ada3a144 = () => interopDefault(import('../pages/traiteur/index.vue' /* webpackChunkName: "pages/traiteur/index" */))
-const _7c6386f4 = () => interopDefault(import('../pages/blogs/comment-organiser-vos-reception.vue' /* webpackChunkName: "pages/blogs/comment-organiser-vos-reception" */))
-const _ed97020c = () => interopDefault(import('../pages/boutique/checkout.vue' /* webpackChunkName: "pages/boutique/checkout" */))
-const _4c58a6d9 = () => interopDefault(import('../pages/producteurs/ferme-ekiola.vue' /* webpackChunkName: "pages/producteurs/ferme-ekiola" */))
-const _30465b71 = () => interopDefault(import('../pages/producteurs/ferme-elizaldia.vue' /* webpackChunkName: "pages/producteurs/ferme-elizaldia" */))
-const _67022118 = () => interopDefault(import('../pages/producteurs/fromagerie-aldudes.vue' /* webpackChunkName: "pages/producteurs/fromagerie-aldudes" */))
-const _1fe17812 = () => interopDefault(import('../pages/producteurs/maison-laborie.vue' /* webpackChunkName: "pages/producteurs/maison-laborie" */))
-const _70886fb5 = () => interopDefault(import('../pages/blogs/_slug.vue' /* webpackChunkName: "pages/blogs/_slug" */))
-const _587b887a = () => interopDefault(import('../pages/cat/_slug.vue' /* webpackChunkName: "pages/cat/_slug" */))
-const _7f2af57e = () => interopDefault(import('../pages/categories/_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
-const _347c093b = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _773ee2f5 = () => interopDefault(import('../pages/blogs/index.vue' /* webpackChunkName: "pages/blogs/index" */))
+const _10d470d6 = () => interopDefault(import('../pages/boutique/index.vue' /* webpackChunkName: "pages/boutique/index" */))
+const _7ac80c60 = () => interopDefault(import('../pages/conditions-generales-ventes.vue' /* webpackChunkName: "pages/conditions-generales-ventes" */))
+const _76d6cb41 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _081c845c = () => interopDefault(import('../pages/mentions-legales.vue' /* webpackChunkName: "pages/mentions-legales" */))
+const _e1e9e6d4 = () => interopDefault(import('../pages/politique-confidentialite.vue' /* webpackChunkName: "pages/politique-confidentialite" */))
+const _067b08c4 = () => interopDefault(import('../pages/producteurs/index.vue' /* webpackChunkName: "pages/producteurs/index" */))
+const _6cdd0b3b = () => interopDefault(import('../pages/strapi/index.vue' /* webpackChunkName: "pages/strapi/index" */))
+const _6f417a66 = () => interopDefault(import('../pages/traiteur/index.vue' /* webpackChunkName: "pages/traiteur/index" */))
+const _344f5a28 = () => interopDefault(import('../pages/blogs/comment-organiser-vos-reception.vue' /* webpackChunkName: "pages/blogs/comment-organiser-vos-reception" */))
+const _6f46121c = () => interopDefault(import('../pages/boutique/checkout.vue' /* webpackChunkName: "pages/boutique/checkout" */))
+const _7e2fc7e1 = () => interopDefault(import('../pages/producteurs/ferme-ekiola.vue' /* webpackChunkName: "pages/producteurs/ferme-ekiola" */))
+const _2a133d69 = () => interopDefault(import('../pages/producteurs/ferme-elizaldia.vue' /* webpackChunkName: "pages/producteurs/ferme-elizaldia" */))
+const _1f2347c0 = () => interopDefault(import('../pages/producteurs/fromagerie-aldudes.vue' /* webpackChunkName: "pages/producteurs/fromagerie-aldudes" */))
+const _3874771a = () => interopDefault(import('../pages/producteurs/maison-laborie.vue' /* webpackChunkName: "pages/producteurs/maison-laborie" */))
+const _758841ad = () => interopDefault(import('../pages/blogs/_slug.vue' /* webpackChunkName: "pages/blogs/_slug" */))
+const _7cb77872 = () => interopDefault(import('../pages/cat/_slug.vue' /* webpackChunkName: "pages/cat/_slug" */))
+const _0d979e86 = () => interopDefault(import('../pages/categories/_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
+const _bb42959a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -37,79 +37,79 @@ export const routerOptions = {
 
   routes: [{
     path: "/blogs",
-    component: _723f10fd,
+    component: _773ee2f5,
     name: "blogs"
   }, {
     path: "/boutique",
-    component: _4ac125ce,
+    component: _10d470d6,
     name: "boutique"
   }, {
     path: "/conditions-generales-ventes",
-    component: _6e61d050,
+    component: _7ac80c60,
     name: "conditions-generales-ventes"
   }, {
     path: "/contact",
-    component: _1221856e,
+    component: _76d6cb41,
     name: "contact"
   }, {
     path: "/mentions-legales",
-    component: _6d8514ca,
+    component: _081c845c,
     name: "mentions-legales"
   }, {
     path: "/politique-confidentialite",
-    component: _f403e6c4,
+    component: _e1e9e6d4,
     name: "politique-confidentialite"
   }, {
     path: "/producteurs",
-    component: _715ade68,
+    component: _067b08c4,
     name: "producteurs"
   }, {
     path: "/strapi",
-    component: _5c3ac39a,
+    component: _6cdd0b3b,
     name: "strapi"
   }, {
     path: "/traiteur",
-    component: _ada3a144,
+    component: _6f417a66,
     name: "traiteur"
   }, {
     path: "/blogs/comment-organiser-vos-reception",
-    component: _7c6386f4,
+    component: _344f5a28,
     name: "blogs-comment-organiser-vos-reception"
   }, {
     path: "/boutique/checkout",
-    component: _ed97020c,
+    component: _6f46121c,
     name: "boutique-checkout"
   }, {
     path: "/producteurs/ferme-ekiola",
-    component: _4c58a6d9,
+    component: _7e2fc7e1,
     name: "producteurs-ferme-ekiola"
   }, {
     path: "/producteurs/ferme-elizaldia",
-    component: _30465b71,
+    component: _2a133d69,
     name: "producteurs-ferme-elizaldia"
   }, {
     path: "/producteurs/fromagerie-aldudes",
-    component: _67022118,
+    component: _1f2347c0,
     name: "producteurs-fromagerie-aldudes"
   }, {
     path: "/producteurs/maison-laborie",
-    component: _1fe17812,
+    component: _3874771a,
     name: "producteurs-maison-laborie"
   }, {
     path: "/blogs/:slug",
-    component: _70886fb5,
+    component: _758841ad,
     name: "blogs-slug"
   }, {
     path: "/cat/:slug?",
-    component: _587b887a,
+    component: _7cb77872,
     name: "cat-slug"
   }, {
     path: "/categories/:slug?",
-    component: _7f2af57e,
+    component: _0d979e86,
     name: "categories-slug"
   }, {
     path: "/",
-    component: _347c093b,
+    component: _bb42959a,
     name: "index"
   }],
 

@@ -1,12 +1,12 @@
 export const state = () => ({
     datas: [
         {
-            product: 'Axoa de porc 2 personnes',
-            weight: '380 GR',
-            price: 8.9,
-            name: 'La ferme Elizaldia',
-            quantity: 1,
-            id: 21
+            name: 'Axoa de porc 2 personnes',
+            poids: '380 GR',
+            prix: 8.9,
+            producteurs: 'La ferme Elizaldia',
+            quantite: 1,
+            stocks: 10,
           },
           {
             product: 'Piperade',
@@ -14,7 +14,8 @@ export const state = () => ({
             price: 4.5,
             name: 'La ferme Elizaldia',
             quantity: 1,
-            id: 22
+            stocks: 10,
+       
           },
           {
             product: 'Tajine de mouton 3-4 personnes',
@@ -22,7 +23,8 @@ export const state = () => ({
             price: 15.9,
             name: 'La ferme Elizaldia',
             quantity: 1,
-            id: 23
+            stocks: 10,
+       
           },
           {
             product: '4 saucisses confites',
@@ -30,7 +32,8 @@ export const state = () => ({
             price: 7,
             name: 'La ferme Elizaldia',
             quantity: 1,
-            id: 24
+            stocks: 10,
+   
           },
           {
             product: 'Couscous de mouton 3-4 personnes',
@@ -38,7 +41,8 @@ export const state = () => ({
             price: 15.9,
             name: 'La ferme Elizaldia',
             quantity: 1,
-            id: 35
+            stocks: 10,
+     
           },
     ]
   })

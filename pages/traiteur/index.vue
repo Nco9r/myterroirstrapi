@@ -557,7 +557,7 @@
             notre célèbre secreto de porc Ibérique.
           </p>
           <p class="nb">
-            <img src="~assets/img/svg/service.svg" alt="" />
+            <img src="@/assets/img/svg/service.svg" alt="" />
             Prestation avec service et ramassage des déchets.
           </p>
         </div>
@@ -646,6 +646,19 @@
               Gouda fermier truffé
             </p>
           </div>
+          <div class="title_group" @click="dessertm = !dessertm">
+            <p>Assortiment de mignardises</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: dessertm }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="dessertm">
+            <p>
+              Mini cœur coulant chocolat maison. <br />
+              Mini pana cotta coulis fruits roues. <br />
+              Mini crème brûlée à la vanille de Madagascar.
+            </p>
+          </div>
           <hr />
         </div>
         <devisMariage />
@@ -686,7 +699,7 @@ export default {
     devisCocktailsBuffets,
     devisBrasero,
     devisRepas,
-    devisMariage
+    devisMariage,
   },
   data() {
     return {
@@ -707,6 +720,7 @@ export default {
       brasero: false,
       grillade: false,
       mariage: false,
+      dessertm: false,
       slickOptions: {
         dots: false,
         arrows: false,
@@ -1276,21 +1290,27 @@ strong {
   align-items: center;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .block_traiteur {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: auto;
   }
   .title {
     display: flex;
-    flex-flow: column;
-    margin-top: 50px;
+    flex-flow: row nowrap;
+    margin-top: 20px;
     justify-content: space-between;
-    padding: 0 120px;
+    align-items: center;
+    padding: 0 0px;
   }
 
-  .title_traiteur {
+  .title_traiteur h2 {
     width: 500px;
+    font-size: 32px;
+    margin-top: 30px;
+    height: 180px;
+    background-size: 100%;
+    background-position: 20px 50px;
   }
 
   .content_title {
@@ -1321,26 +1341,27 @@ strong {
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .block_traiteur {
-    max-width: 1900px;
+    max-width: 1400px;
     margin: auto;
   }
   .title {
     display: flex;
     flex-flow: row;
-    margin-top: 100px;
+    margin-top: 20px;
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
   }
 
-  .title_traiteur h2{
-    width: 800px;
-    font-size: 58px;
-    height: 300px;
+  .title_traiteur h2 {
+    width: 700px;
+    font-size: 42px;
+    margin-top: 30px;
+    height: 200px;
     background-size: 100%;
-    background-position: -20px 100px;
+    background-position: 20px 50px;
   }
 
   .content_title {
@@ -1348,8 +1369,8 @@ strong {
   }
 
   .card {
-    width: 400px;
-    margin-right: 40px;
+    width: 47%;
+    margin-bottom: 10px;
   }
   .bloc_cards {
     display: flex;

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/traiteur", {data:[{}],fetch:{},mutations:[]});

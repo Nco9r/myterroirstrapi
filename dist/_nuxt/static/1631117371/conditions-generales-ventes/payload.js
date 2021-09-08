@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/conditions-generales-ventes", {data:[{}],fetch:{},mutations:[]});

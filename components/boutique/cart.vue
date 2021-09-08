@@ -513,7 +513,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .panier {
     width: 20%;
     position: fixed;

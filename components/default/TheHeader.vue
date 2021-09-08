@@ -553,7 +553,7 @@ hr {
     padding: 20px 0;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .block_header {
     max-width: 1400px;
     margin: auto;

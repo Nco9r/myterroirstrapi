@@ -1,7 +1,7 @@
 const strapiBaseUri = process.env.API_URL || 'https://admin-myterroir.fr/'
 
 module.exports = {
-  mode: 'universal',
+  target: 'static',
   buildDir: 'nuxt-dist',
   env: {
     strapiBaseUri,

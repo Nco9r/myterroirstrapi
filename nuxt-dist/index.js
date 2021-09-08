@@ -14,9 +14,6 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_markdownit_920a69dc from 'nuxt_plugin_markdownit_920a69dc' // Source: ./markdownit.js (mode: 'all')
-import nuxt_plugin_workbox_10004d08 from 'nuxt_plugin_workbox_10004d08' // Source: ./workbox.js (mode: 'client')
-import nuxt_plugin_metaplugin_08e00c1b from 'nuxt_plugin_metaplugin_08e00c1b' // Source: ./pwa/meta.plugin.js (mode: 'all')
-import nuxt_plugin_iconplugin_0d87b18f from 'nuxt_plugin_iconplugin_0d87b18f' // Source: ./pwa/icon.plugin.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_216b2a94 from 'nuxt_plugin_cookieuniversalnuxt_216b2a94' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_httpserver_6121924e from 'nuxt_plugin_httpserver_6121924e' // Source: ./http.server.js (mode: 'server')
 import nuxt_plugin_http_604321e4 from 'nuxt_plugin_http_604321e4' // Source: ./http.js (mode: 'all')
@@ -91,7 +88,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Produits artisanaux et cuisine de terroir.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Distributeur de produits authentiques pour les professionnels et particuliers."},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"myterroir"},{"hid":"author","name":"author","content":"Stéphane Eclache"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"myterroir"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"myterroir"},{"hid":"og:description","name":"og:description","property":"og:description","content":"Distributeur de produits authentiques pour les professionnels et particuliers."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"hid":"shortcut-icon","rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64x64.901a85.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512x512.901a85.png","sizes":"512x512"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.a5d6df32.json","hid":"manifest"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+    head: {"title":"Produits artisanaux et cuisine de terroir.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Distributeur de produits authentiques pour les professionnels et particuliers."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,
@@ -222,18 +219,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_markdownit_920a69dc === 'function') {
     await nuxt_plugin_markdownit_920a69dc(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_workbox_10004d08 === 'function') {
-    await nuxt_plugin_workbox_10004d08(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_metaplugin_08e00c1b === 'function') {
-    await nuxt_plugin_metaplugin_08e00c1b(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_iconplugin_0d87b18f === 'function') {
-    await nuxt_plugin_iconplugin_0d87b18f(app.context, inject)
   }
 
   if (typeof nuxt_plugin_cookieuniversalnuxt_216b2a94 === 'function') {

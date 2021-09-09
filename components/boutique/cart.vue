@@ -462,7 +462,7 @@ hr {
 
 .items_products_cart {
   overflow: scroll;
-  height: 60%; 
+  height: 45%; 
 }
 
 @media screen and (min-width: 1024px) {
@@ -477,6 +477,11 @@ hr {
   .overlay {
     z-index: 140;
   }
+
+  .items_products_cart {
+  overflow: scroll;
+  height: 53%; 
+}
 
   .title_panier {
     margin-top: 30px;
@@ -516,6 +521,11 @@ hr {
     right: 0;
     z-index: 150;
   }
+    .items_products_cart {
+  overflow: scroll;
+  height: 63%; 
+}
+
 }
 
 @media screen and (min-width: 1600px) {
@@ -524,6 +534,8 @@ hr {
     position: fixed;
     right: 0;
     z-index: 150;
+
+    
   }
 }
 </style>

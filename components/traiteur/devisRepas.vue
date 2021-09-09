@@ -450,7 +450,7 @@ input[type='checkbox' i]:checked::after {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .devis_mobile {
     position: absolute;
     bottom: 0;

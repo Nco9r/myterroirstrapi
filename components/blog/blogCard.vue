@@ -106,14 +106,17 @@ text-decoration: underline;
 .datetime p {
   margin-top: 20px;
   color: var(--Body);
-  font-size: 13px;
+  font-size: 12px;
   font-family: body;
 }
 
 @media screen and (min-width: 1024px) {
   .blogCard {
     width: 25%;
+    padding: 0;
   }
+
+
 
   .title h5 {
     font-size: 20px;
@@ -124,6 +127,7 @@ text-decoration: underline;
 @media screen and (min-width: 1200px) {
   .blogCard {
     width: 32.3%;
+    padding: 0;
   }
 
   .picture_wrapper img {

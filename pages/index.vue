@@ -28,7 +28,7 @@ import Newsletter from "../components/default/Newsletter";
 export default {
   async asyncData({ $strapi }) {
     return {
-      blogs: await $strapi.find('blogs?_limit=3'),
+      blogs: await $strapi.find('blogs?_sort=id:DESC&_limit=3'),
 
     }
   },
@@ -70,7 +70,27 @@ export default {
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 50px 15px 50px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.actus h2 {
+  position: relative;
+}
+
+.actus h2::after {
+  content:'';
+  background-color: var(--orange);
+  z-index: -1;
+  left: 0;
+  top: 10px;
+  right: 0;
+  width: 100%;
+  height: 15px;
+  position: absolute;
 }
 
 .actus p {
@@ -81,7 +101,7 @@ export default {
 @media screen and (min-width: 1200px) {
   .actus {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 60px auto;
     padding: 0;
   }
 
@@ -92,7 +112,7 @@ export default {
 }
 
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .actus {
     max-width: 1400px;
     margin: 20px auto 60px auto;

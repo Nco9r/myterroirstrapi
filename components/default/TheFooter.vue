@@ -58,9 +58,7 @@
       <div class="copyright_footer">
         <div class="picto_bancaire">
           <div class="picto">
-            <img src="~assets/img/png/logo_cb.jpeg" alt="" />
-            <img src="~assets/img/png/visa_logo.png" alt="" />
-            <img src="~assets/img/png/logo_mastercard.png" alt="" />
+            <img src="~assets/img/svg/cards_bank.svg" alt="" />
           </div>
           <div class="icons_sociaux_desktop">
                 <a href="https://fr-fr.facebook.com/myterroir/" target="_blank"><img src="~assets/img/svg/facebook.svg" alt="" /></a>
@@ -166,7 +164,7 @@ a {
 }
 
 .picto img {
-  width: 40px;
+  width: 320px;
   margin-right: 5px;
 }
 
@@ -262,11 +260,24 @@ a {
 @media screen and (min-width: 1200px) {
  .footer {
     padding: 50px 0px 0px 0px;
-
   }
-
 .bloc_footer {
-  max-width: 1800px;
+  max-width: 1100px;
+  margin: auto;
+}
+  
+
+  .item {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+ .footer {
+    padding: 50px 0px 0px 0px;
+  }
+.bloc_footer {
+  max-width: 1400px;
   margin: auto;
 }
   

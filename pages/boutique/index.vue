@@ -421,7 +421,7 @@ hr {
     font-family: body, sans-serif;
     letter-spacing: 1px;
     width: 100%;
-    border-bottom: 1px dotted var(--gray-light);
+    border-bottom: 1px dotted var(--black);
     padding-bottom: 5px;
     color: var(--black);
     margin-bottom: 20px;
@@ -514,7 +514,7 @@ hr {
   .products_box {
     display: flex;
     max-width: 1400px;
-    margin: 750px auto 100px auto;
+    margin: 700px auto 100px auto;
     flex-flow: row wrap;
     height: 100%;
     justify-content: space-between;
@@ -523,6 +523,7 @@ hr {
 
   .products_cards {
     justify-content: flex-start;
+    padding: 0;
   }
 
   .card {

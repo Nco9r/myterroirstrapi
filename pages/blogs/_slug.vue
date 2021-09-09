@@ -1,5 +1,8 @@
 <template>
 <main>
+  <div class="overflow">
+
+ 
     <section class="nav_blog">
      <div class="nav_retour">
        <img src="~assets/img/svg/arrow-left.svg" alt="">
@@ -36,6 +39,7 @@
         <blogRubrique :blogsrubrique=blogsrubrique />
     </div>
     <Newsletter />
+     </div>
   </main>
   
 </template>
@@ -66,6 +70,11 @@ export default {
 </script>
 
 <style>
+
+.overflow {
+  overflow-x: hidden;
+}
+
 
 .nav_blog {
   display: flex; 

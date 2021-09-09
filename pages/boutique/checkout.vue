@@ -178,7 +178,7 @@ export default {
       e.preventDefault()
       // return this.$store.dispatch('cart'['SendCart'])
       this.$axios
-        .post('http://localhost:8080/shop', [
+        .post('https://apimyterroir.rouxnicolas.fr/shop', [
           this.form,
           this.$store.state.cart.datas,
           this.total

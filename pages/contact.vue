@@ -264,7 +264,7 @@ form {
 
 @media screen and (min-width: 1200px) {
   .contact {
-   max-width: 1400px;
+   max-width: 1200px;
       margin: 40px auto 100px auto; 
  
   display: flex;
@@ -285,5 +285,28 @@ form {
 
 }
 }
+
+@media screen and (min-width: 1600px) {
+  .contact {
+   max-width: 1400px;
+      margin: 40px auto 100px auto; 
+ 
+  display: flex;
+
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.block_form {
+  width: 50%;
+}
+
+.block_infos {
+  text-align: left;
+  margin: 0;
+    padding: 80px 160px 194px 100px;
+
+}}
 
 </style>

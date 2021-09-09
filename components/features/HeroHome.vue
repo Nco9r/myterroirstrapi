@@ -223,7 +223,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .getBlog {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 120px auto;
   }
 

@@ -41,13 +41,13 @@ a {
     align-items: flex-start; 
     justify-content: space-between;
     padding: 20px; 
-    margin-right: -17px;
+  
 }
 
 .blogCard {
   width: 100%;
   margin-bottom: 45px;
-   padding: 0 15Px;
+   padding: 0;
 }
 
 

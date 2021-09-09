@@ -510,7 +510,7 @@ hr {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .products_box {
     display: flex;
     max-width: 1400px;

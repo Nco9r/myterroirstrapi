@@ -145,6 +145,10 @@ export default {
   line-height: 32px;
 }
 
+.bloc_left_bottom {
+  display: none;
+}
+
 .title_article hr {
   border: none;
   width: 30px;
@@ -394,7 +398,8 @@ hr {
     position: sticky!important;
     top: 120px;
     height: 100%;
-
+    display: flex;
+    flex-flow: column;
     position: relative
 
   }

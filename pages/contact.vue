@@ -10,18 +10,22 @@
             voulez juste dire bonjour ? Ce formulaire est fait pour vous !
           </p>
         </div>
-        <form>
+        <form @submit="submit">
           <div class="form_group">
             <label for="">Objet</label>
-            <select name="" id="select">
+            <select name="" id="select" v-model="form.demande">
               <option value="presse">Presse</option>
               <option value="clients">Commentaires clients</option>
               <option value="presse">Une question</option>
             </select>
           </div>
+           <div class="form_group">
+            <label for="">Nom et Prénom</label>
+            <input type="text" placeholder="votre@email.fr" required v-model="form.name" />
+          </div>
           <div class="form_group">
             <label for="">Votre email</label>
-            <input type="email" placeholder="votre@email.fr" required />
+            <input type="email" placeholder="votre@email.fr" required v-model="form.email" />
           </div>
           <div class="form_group">
             <label for="">Votre message</label>
@@ -32,6 +36,7 @@
               rows="10"
               placeholder="Ecrire ici"
               required
+              v-model="form.message"
             ></textarea>
           </div>
           <div class="form_group">
@@ -69,6 +74,38 @@
 import Newsletter from '../components/default/Newsletter.vue';
 export default {
   components: {Newsletter},
+  data() {
+    return {
+      form: {
+        email: '',
+        name: '',
+        demande:'',
+        message: ''
+      }
+    }
+  },
+  methods:{
+     submit(e) {
+      e.preventDefault()
+      console.log({ ...this.form })
+      ;(this.loading = true), (this.state = false)
+        this.$axios
+          .post('https://apimyterroir.rouxnicolas.fr/contact', { ...this.form })
+          .then(
+            (res) =>
+            (this.form = ''),
+            (this.loading = false),
+            (this.state = true),
+            (this.goodNews = true)
+          )
+          .catch((error) => {
+             ;(this.error = true),
+            (this.form = ''),
+            (this.loading = false),
+            (this.state = true)
+          })
+    }
+  }
 };
 </script>
 

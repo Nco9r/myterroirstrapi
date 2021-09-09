@@ -46,7 +46,7 @@
       <div class="rubrique">
         <div class="title_rubrique">
           <p>Voir aussi</p>
-          <nuxt-link to="/blog">Tout voir</nuxt-link>
+          <nuxt-link to="/blogs">Tout voir</nuxt-link>
         </div>
         <blogRubrique :blogsrubrique="blogsrubrique" />
       </div>
@@ -520,7 +520,7 @@ hr {
   .bloc_left_bottom a{
     font-size: 14px;
     width: 200px;
-    margin-top: 150px;
+    margin-top: 50px;
     line-height: 22px;
     color: var(--orange);
   }

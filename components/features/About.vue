@@ -167,7 +167,7 @@ strong {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .about_content p {
     width: 500px;
   }

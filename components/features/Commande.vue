@@ -165,7 +165,7 @@ hr {
   }
 
   .commande_title h2{
-    width: 600px;
+    width: 900px;
     margin: auto;
     font-size: 32px; 
     line-height: 46px; 

@@ -279,7 +279,7 @@ button {
     border: none;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .getBlog {
     max-width: 1400px;
     margin: 120px auto;

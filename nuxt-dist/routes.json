@@ -2,85 +2,85 @@
   {
     "name": "blogs",
     "path": "/blogs",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/blogs/index.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/blogs/index.vue",
     "chunkName": "pages/blogs/index",
-    "_name": "_773ee2f5"
+    "_name": "_d3c5d38e"
   },
   {
     "name": "boutique",
     "path": "/boutique",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/boutique/index.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/boutique/index.vue",
     "chunkName": "pages/boutique/index",
-    "_name": "_10d470d6"
+    "_name": "_34844712"
   },
   {
     "name": "conditions-generales-ventes",
     "path": "/conditions-generales-ventes",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/conditions-generales-ventes.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/conditions-generales-ventes.vue",
     "chunkName": "pages/conditions-generales-ventes",
-    "_name": "_7ac80c60"
+    "_name": "_ac59b5d8"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/contact.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_76d6cb41"
+    "_name": "_bb8d7ef6"
   },
   {
     "name": "mentions-legales",
     "path": "/mentions-legales",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/mentions-legales.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/mentions-legales.vue",
     "chunkName": "pages/mentions-legales",
-    "_name": "_081c845c"
+    "_name": "_19f615e4"
   },
   {
     "name": "politique-confidentialite",
     "path": "/politique-confidentialite",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/politique-confidentialite.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/politique-confidentialite.vue",
     "chunkName": "pages/politique-confidentialite",
-    "_name": "_e1e9e6d4"
+    "_name": "_34478e4c"
   },
   {
     "name": "traiteur",
     "path": "/traiteur",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/traiteur/index.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/traiteur/index.vue",
     "chunkName": "pages/traiteur/index",
-    "_name": "_6f417a66"
+    "_name": "_da1d5ebc"
   },
   {
     "name": "boutique-checkout",
     "path": "/boutique/checkout",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/boutique/checkout.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/boutique/checkout.vue",
     "chunkName": "pages/boutique/checkout",
-    "_name": "_6f46121c"
+    "_name": "_989eb194"
   },
   {
     "name": "blogs-slug",
     "path": "/blogs/:slug",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/blogs/_slug.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/blogs/_slug.vue",
     "chunkName": "pages/blogs/_slug",
-    "_name": "_758841ad"
+    "_name": "_d733161e"
   },
   {
     "name": "cat-slug",
     "path": "/cat/:slug?",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/cat/_slug.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/cat/_slug.vue",
     "chunkName": "pages/cat/_slug",
-    "_name": "_7cb77872"
+    "_name": "_5951acb6"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/categories/_slug.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/categories/_slug.vue",
     "chunkName": "pages/categories/_slug",
-    "_name": "_0d979e86"
+    "_name": "_04aad5c2"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/nicolasroux/Documents/Code source/My Terroir/pages/index.vue",
+    "component": "/Users/nicolasroux/Documents/Code source/My Terroir - Front-end/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_bb42959a"
+    "_name": "_03a5ab77"
   }
 ]

@@ -46,12 +46,12 @@
               <div class="number_products">
                 <p
                   @click="removeQuantity(cart.id)"
-                  :class="{ opacity : cart.quantite < 2 }"
+                  :class="{ opacity : cart.quantite === 1 }"
                 >
                   -
                 </p>
                 <p>{{ cart.quantite }}</p>
-                <p @click="addQuantity(cart.id)" :class="{ opacity : cart.quantite === 10 }">+</p>
+                <p @click="addQuantity(cart.id)" :class="{ opacity : cart.quantite === cart.stocks }">+</p>
               </div>
             </div>
             <div class="delete_products">
@@ -142,6 +142,11 @@ export default {
 
 <style scoped>
 /* TRANSITION */
+
+.opacity {
+  pointer-events: none;
+  color: var(--gray-light);
+}
 
 .cartOpen-enter-active {
   animation: open 0.7s ease-in-out;

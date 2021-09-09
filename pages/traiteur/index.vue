@@ -22,7 +22,7 @@
         </div>
         <div class="cards">
           <div class="bloc_cards">
-            <div class="card">
+            <div class="card" @click="cocktails = !cocktails">
               <div class="img">
                 <img src="~assets/img/png/traiteur.jpg" alt="" />
                 <div class="price">
@@ -44,11 +44,11 @@
                 </p>
               </div>
               <hr />
-              <div class="cta_card" @click="cocktails = !cocktails">
+              <div class="cta_card">
                 <p>Plus d'infos</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" @click="brasero = !brasero">
               <div class="img">
                 <img src="~assets/img/png/brasero_4.jpg" alt="" />
                 <div class="price">
@@ -70,11 +70,11 @@
                 </p>
               </div>
               <hr />
-              <div class="cta_card" @click="brasero = !brasero">
+              <div class="cta_card">
                 <p>Plus d'infos</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" @click="grillade = !grillade">
               <div class="img">
                 <img src="~assets/img/png/brasero.jpg" alt="" />
                 <div class="price">
@@ -96,11 +96,11 @@
                 </p>
               </div>
               <hr />
-              <div class="cta_card" @click="grillade = !grillade">
+              <div class="cta_card">
                 <p>Plus d'infos</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card" @click="mariage = !mariage">
               <div class="img">
                 <img src="~assets/img/png/mariage.jpg" alt="" />
                 <div class="price">
@@ -123,7 +123,7 @@
                 </p>
               </div>
               <hr />
-              <div class="cta_card" @click="mariage = !mariage">
+              <div class="cta_card">
                 <p>Plus d'infos</p>
               </div>
             </div>
@@ -179,6 +179,8 @@
         <div class="details_group">
           <h3>Buffets déposés</h3>
           <p class="nb">
+            <img src="~assets/img/svg/warning.svg" alt="" />
+
             Prestation sans service. Nécessaire de service inclus. Livraison sur
             site incluse dans la limite de 20km.
           </p>
@@ -265,6 +267,8 @@
         <div class="details_group">
           <h3>Cocktails avec service</h3>
           <p class="nb">
+            <img src="@/assets/img/svg/service.svg" alt="" />
+
             Prestation avec service et ramassage des déchets.
           </p>
         </div>
@@ -354,6 +358,7 @@
         <devisCocktailsBuffets />
       </div>
     </transition>
+
     <div class="overlay" v-if="brasero" @click="brasero = !brasero"></div>
     <transition name="open" appear>
       <!-- <div class="img_card">
@@ -402,7 +407,7 @@
           </p>
 
           <p class="nb">
-            <img src="~assets/img/svg/care.svg" alt="" />
+            <img src="~assets/img/svg/service.svg" alt="" />
 
             Prestation avec service et ramassage des déchets.
           </p>
@@ -516,6 +521,123 @@
       </div>
     </transition>
 
+
+
+
+ <div class="overlay" v-if="grillade" @click="grillade = !grillade"></div>
+    <transition name="open" appear>
+      <!-- <div class="img_card">
+          <img src="~assets/img/png/brasero.jpg" alt="" />
+        </div> -->
+      <div class="details" v-if="grillade">
+        <div class="card_name">
+          <div class="title_name_card">
+            <span></span>
+            <h3>Repas et Grillade</h3>
+          </div>
+          <p @click="grillade = !grillade">Retour</p>
+        </div>
+        <div class="img_card">
+          <div class="arrow">
+            <div class="arrowPrev" @click="Prev">
+              <img src="~assets/img/svg/arrowmt.svg" alt="" />
+            </div>
+            <div class="arrowNext" @click="Next">
+              <img src="~assets/img/svg/arrowmt.svg" alt="" />
+            </div>
+          </div>
+          <VueSlickCarousel
+            v-bind="slickOptions"
+            ref="carousel"
+            class="carousel"
+          >
+            <img src="~assets/img/png/brasero.jpg" alt="" />
+            <img src="~assets/img/png/img_traiteur.jpg" alt="" />
+            <img src="~assets/img/png/brasero_4.jpg" alt="" />
+          </VueSlickCarousel>
+        </div>
+        <div class="content_card_intro">
+          <p>
+           Une prestation haut de gamme que vous n’êtes pas prêt d’oublier : nous venons avec plus de personnel pour le service, nous présentons les viandes fraîches à table avant cuisson, les épices et accompagnements choisis, nous faisons du show-co- oking sur place, découpes des viandes en salle, plusieurs repasses en service. Nous avons déjà réalisé ces formules pour des mariages chic dans des demeures d’exception, demandez-nous toutes les folies nous savons vous les réaliser. Toujours sur devis personnalisé
+          </p>
+          <p class="nb">
+            <img src="~assets/img/svg/service.svg" alt="" />
+
+            Prestation avec service et ramassage des déchets.
+          </p>
+        </div>
+        <hr />
+        <div class="details_group">
+          <h3>La prestation en détails :</h3>
+        </div>
+        <div class="group">
+          <div class="title_group" @click="apero = !apero">
+            <p>En amuses-bouches</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: apero }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="apero">
+            <p>
+              côtelettes d’agneau, encornets, os à moelle, chèvre chaud lardé, coeurs de canard, saint-jacques fraîches à la plancha, foie gras snacké.
+            </p>
+          </div>
+          <div class="title_group" @click="bBasque = !bBasque">
+            <p>La grosse barbaque pour les rongeurs d’os</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: bBasque }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="bBasque">
+            <p>
+              travers de porc au miel, os à moelle grillé, palette de porc, Tomahawk
+            </p>
+          </div>
+          <div class="title_group" @click="bFrance = !bFrance">
+            <p>Belles pièces de boeuf</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: bFrance }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="bFrance">
+            <p>
+              Araignée, onglet, hampe, bavette, T-bone, Toma- hawk, Picanha ...
+            </p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="title_group" @click="cBasque = !cBasque">
+            <p>Viandes d’exception</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: cBasque }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="cBasque">
+            <p>
+             Boeuf de Galice, pluma de pata negra, noix d’entre- côte black angus, filet de Wagyu, agneau des Pyrénées, double côte de co- chon fermier, etc. ...
+            </p>
+          </div>
+          <div class="title_group" @click="cFrance = !cFrance">
+            <p>L’atelier « à la découverte de la Viande »</p>
+            <div class="price_content">
+              <p class="plus" :class="{ plus_open: cFrance }">+</p>
+            </div>
+          </div>
+          <div class="content_group" v-if="cFrance">
+            <p>
+              La célèbre soirée atelier-dégus- tation de viandes maturées : différentes races et affinages avec les explica- tions du chef sur les origines des viandes, les modes d’élevage, les mé- thodes de maturation, démonstration de découpe, etc. Un moment d’exception, convivial, interactif et instructif
+            </p>
+          </div>
+          <hr />
+        </div>
+        <devisRepas />
+      </div>
+    </transition>
+
+
+
+
+
     <div class="overlay" v-if="mariage" @click="mariage = !mariage"></div>
     <transition name="open" appear>
       <!-- <div class="img_card">
@@ -563,7 +685,7 @@
         </div>
         <hr />
         <div class="details_group">
-          <h3>La prestations en détails</h3>
+          <h3>La prestation en détails</h3>
         </div>
         <div class="group">
           <div class="title_group" @click="apero = !apero">
@@ -761,7 +883,7 @@ export default {
 <style scoped>
 .nb {
   font-size: 10px !important;
-  color: var(--black);
+  color: var(--black)!important;
   line-height: 20px !important;
   background-color: var(--gray);
   font-family: bodyBold, sans-serif;
@@ -770,6 +892,10 @@ export default {
   margin-bottom: 10px;
   display: flex;
   width: 100%;
+}
+
+strong {
+  color: var(--black);
 }
 
 .nb img {
@@ -1124,7 +1250,7 @@ a {
   align-items: center;
   color: var(--orange);
   font-family: bodyBold, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 strong {

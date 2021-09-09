@@ -19,9 +19,12 @@
               :key="c.id"
               :to="{ name: 'cat-slug', params: { slug: c.slug } }"
             >
-              <p>{{ c.name }}</p></nuxt-link
+              <p>{{ c.name }}</p>
+            </nuxt-link
             >
+              
           </div>
+          <nuxt-link to='/boutique'><p class="all">Tous les produits</p></nuxt-link>
         </div>
       </div>
       <div class="categories_products_desktop">
@@ -187,6 +190,11 @@ a {
   align-items: center;
 }
 
+.open_rayon {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .rayons img {
   width: 20px;
   transition: all 0.3s;
@@ -207,8 +215,20 @@ a {
 
 .categorie_mobile p {
   margin-right: 20px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--gray-light);
   padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.all {
+   margin-right: 20px;
+  border: 1px solid var(--gray-light);
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: body, sans-serif;
+  color: var(--Body);
   border-radius: 3px;
   margin-bottom: 10px;
 }

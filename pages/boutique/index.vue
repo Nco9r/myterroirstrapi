@@ -188,6 +188,16 @@ export default {
   transform: rotate(180deg);
 }
 
+.open_rayon {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Body);
+}
+
 .categorie_mobile {
   display: flex;
   flex-flow: row wrap;
@@ -199,7 +209,7 @@ export default {
 
 .categorie_mobile p {
   margin-right: 20px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--gray-light);
   padding: 10px 20px;
   border-radius: 3px;
   margin-bottom: 10px;

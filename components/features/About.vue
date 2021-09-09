@@ -4,7 +4,7 @@
       <h2>dénicheur de <span>produits</span> authentiques.</h2>
       <hr />
       <p>
-        Notre secret : de bons <strong>produits</strong> achetés directement au <strong>producteur</strong>, une
+        Notre secret : de bons <strong>produits</strong> achetés directement aux <strong>producteurs</strong>, une
         équipe <strong>passionnée</strong>, motivée et quelques bons <strong>livres</strong> de grand-mères. Bon
         on avoue : il nous aura fallu 5 ans, <strong>beaucoup de travail</strong>, de nombreux
         <strong>voyages</strong> et autant de rencontres pour pouvoir vous proposer en toute
@@ -107,7 +107,7 @@ strong {
     margin: 700px auto 100px auto;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1000px;
+    max-width: 900px;
   }
 
   .about_content {

@@ -421,7 +421,6 @@ hr {
     font-family: body, sans-serif;
     letter-spacing: 1px;
     width: 100%;
-    border-bottom: 1px dotted var(--black);
     padding-bottom: 5px;
     color: var(--black);
     margin-bottom: 20px;

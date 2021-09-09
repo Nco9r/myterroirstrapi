@@ -149,10 +149,11 @@ hr {
    background-color: var(--black);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
 
    section {
        padding-bottom: 100px;
+        
    } 
 
   .commande_title {
@@ -165,7 +166,7 @@ hr {
   }
 
   .commande_title h2{
-    width: 900px;
+    width: 700px;
     margin: auto;
     font-size: 32px; 
     line-height: 46px; 

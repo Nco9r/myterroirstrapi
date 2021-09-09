@@ -31,7 +31,7 @@
         <nuxt-link to='/boutique'>
         <p>Tous les produits</p>
         </nuxt-link>
-        <div class="categories_products_desktop" v-for="c in productsC" :key="c.id">
+        <div class="categories_products_name" v-for="c in productsC" :key="c.id">
             <nuxt-link
         :key="c.id"
         :to="{ name: 'cat-slug', params: { slug: c.slug } }"
@@ -47,7 +47,12 @@
         <div class="card" v-for="p in allProduct" :key="p.id">
           <div class="img">
             <img :src="getStrapiMedia(p.image.url)" alt="" />
-            <p class="addCart" @click="addOne(p)" v-if="p.stocks >= 1">+</p>
+            <p class="addCart" @click="addOne(p)" v-if="p.stocks >= 1" :class="{ opacity_add : p.quantite === p.stocks }" >+</p>
+             <div class="number_add" v-if="p.stocks >= 1">
+              <p @click="removeQuantity(p.id)" :class="{ opacity : p.quantite === 1 }">-</p>
+              <p>{{ p.quantite }}</p>
+              <p @click="addProductQuantity(p.id)" :class="{ opacity : p.quantite === p.stocks }">+</p>
+            </div>
             <p class="none" v-if="p.stocks === 0">produit épuisé</p>
           </div>
           <div class="titleProducts">
@@ -125,13 +130,9 @@ export default {
   },
 
   methods: {
-    ...mapMutations("cart", ["addOne"]),
-    ...mapMutations("charcuterie", ["addProductQuantity"]),
-    ...mapMutations("fromages", ["addProductQuantityF"]),
-    ...mapMutations("viande", ["addProductQuantityV"]),
-    ...mapMutations("charcuterie", ["removeQuantity"]),
-    ...mapMutations("fromages", ["removeQuantityF"]),
-    ...mapMutations("viande", ["removeQuantityV"]),
+     ...mapMutations("cart", ["addOne"]),
+    ...mapMutations(["addProductQuantity"]),
+    ...mapMutations(["removeQuantity"]),
     getStrapiMedia,
   },
 };
@@ -295,6 +296,41 @@ hr {
   right: 10px;
 }
 
+.addCart:hover {
+  color: var(--white);
+  background-color: var(--black);
+
+
+}
+
+.number_add {
+  display: flex;
+  flex: row;
+  width: 60px;
+  height: 40px;
+  font-size: 12px;
+  background-color: var(--white);
+  padding: 5px 10px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.opacity {
+  pointer-events: none;
+  color: var(--gray-light);
+}
+
+.opacity_add {
+  pointer-events: none;
+  background-color: var(--gray-light)!important;
+}
+
 .none {
   position: absolute;
   z-index: 2;
@@ -387,20 +423,29 @@ hr {
     height: 1px;
   }
 
-  
-
-   .categories_products_desktop a  {
+  .categories_products_desktop a {
     text-transform: uppercase;
     font-family: body, sans-serif;
     letter-spacing: 1px;
     width: 100%;
     color: var(--black);
-    margin-bottom: 20px; 
+
+    margin-bottom: 20px;
 
     font-size: 14px;
+  }
 
-  
-   }
+  .categories_products_name {
+    text-transform: uppercase;
+    font-family: body, sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    padding-bottom: 5px;
+    color: var(--black);
+    margin-bottom: 20px;
+
+    font-size: 14px;
+  }
 
   .products_cards {
     width: 80%;

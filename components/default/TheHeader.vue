@@ -433,6 +433,8 @@ hr {
     right: 0;
   }
 
+  
+
   .open-enter-active {
     animation: slide 0.3s;
   }
@@ -460,10 +462,18 @@ hr {
   }
 }
 
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 1024px) {
   header {
     width: 100%;
-    /* background-color: var(--gray); */
+    /* backgrou
+    nd-color: var(--gray); */
+    
+  }
+
+  .block_header {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 0;
   }
 
   .cart {

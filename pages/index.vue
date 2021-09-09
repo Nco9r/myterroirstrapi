@@ -105,6 +105,11 @@ a {
     padding: 0;
   }
 
+  .actus h2 {
+  font-size: 32px;
+  line-height: 46px;
+}
+
   .actus p {
     font-size: 14px;
     color: var(--Body);

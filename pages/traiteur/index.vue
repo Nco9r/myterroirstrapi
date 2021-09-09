@@ -974,7 +974,7 @@ strong {
 
 .img_card img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   z-index: 2;
 }
@@ -1083,7 +1083,7 @@ strong {
 
 .card .img img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 

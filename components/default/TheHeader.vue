@@ -47,7 +47,9 @@
               <p v-if="carts.length > 0">{{ carts.length }}</p>
             </div>
             <span></span>
-            <button @click="devis = !devis">Obtenir mon devis</button>
+            <nuxt-link to="/contact">
+            <button>Contact</button>
+            </nuxt-link>
           </div>
         </div>
         <transition name="open" appear>

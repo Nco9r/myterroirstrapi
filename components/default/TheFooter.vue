@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="bloc_footer">
+    <div class="block_footer">
       <div class="content_footer">
         <div class="logo_footer">
           <img src="~assets/img/svg/logo_mt.svg" alt="" />
@@ -261,9 +261,10 @@ a {
  .footer {
     padding: 50px 0px 0px 0px;
   }
-.bloc_footer {
-  max-width: 1100px;
+.block_footer {
+  max-width: 1200px;
   margin: auto;
+
 }
   
 
@@ -276,9 +277,10 @@ a {
  .footer {
     padding: 50px 0px 0px 0px;
   }
-.bloc_footer {
-  max-width: 1400px;
+.block_footer {
+  max-width: 1800px!important;
   margin: auto;
+
 }
   
 

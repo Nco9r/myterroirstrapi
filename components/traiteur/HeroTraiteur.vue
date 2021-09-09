@@ -3,7 +3,7 @@
     <div class="card_first">
       <div class="block_content">
         <div class="title_blog">
-          <p class="categorie">Boutique</p>
+          <p class="categorie">Traiteur</p>
           <h1>Le service traiteur de <span class="black">My Terroir</span></h1>
           <p class="description">Cassez les codes, choisissez un traiteur sur Bordeaux pas comme les autres pour vos mariages, séminaires, cocktails et buffets. Étonné tous vos convives grâce aux équipes et produits MyTerroir.</p>
          <button>Scroll</button>
@@ -50,6 +50,7 @@ export default {
 
 .getBlog {
   margin-bottom: 50px;
+  margin-top: 80Px;
 }
 
 .black {
@@ -94,7 +95,7 @@ export default {
     color: var(--black);
     font-family: bodyBold, sans-serif;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 14px;
   }
 
@@ -103,7 +104,7 @@ export default {
 
     color: var(--white);
     line-height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 28px;
   }
 
@@ -120,6 +121,7 @@ export default {
   padding: 10px 48px;
   color: var(--white);
   font-size: 14px;
+  margin-top: 20px;
   cursor: pointer;
   font-family: bodyBold;
   border: none;

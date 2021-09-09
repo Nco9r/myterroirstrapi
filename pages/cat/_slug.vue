@@ -506,7 +506,7 @@ hr {
   }
 
   .img img {
-    width: 240px;
+    width: 100%;
     object-fit: cover;
     height: 240px;
     background-color: var(--gray);

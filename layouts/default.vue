@@ -70,7 +70,7 @@ html {
 :root {
   --black: #282522;
   --orange: #E5521A; 
-  --Body: #585858;
+  --Body: #3f3f3f;
   --beige: #C99C78;
   --white: #FFF; 
   --gray-light: #f3f3f3;

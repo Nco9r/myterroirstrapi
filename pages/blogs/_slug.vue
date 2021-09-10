@@ -66,7 +66,7 @@ export default {
       slug: params.slug,
     });
     return {
-      blogsrubrique: await $strapi.find("blogs?_sort=id:DESC&_limit=1"),
+      blogsrubrique: await $strapi.find("blogs?_sort=id:DESC"),
       blog: matchingBlogs[0],
     };
   },

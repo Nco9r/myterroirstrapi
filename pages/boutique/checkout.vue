@@ -14,15 +14,15 @@
             </div>
             <div class="label">
               <p>Nom et prénom</p>
-              <input type="text" v-model="form.name" />
+              <input type="text" required v-model="form.name" />
             </div>
             <div class="label">
               <p>E-mail</p>
-              <input type="email" v-model="form.email" />
+              <input type="email" required v-model="form.email" />
             </div>
             <div class="label">
               <p>Téléphone portable</p>
-              <input type="text" v-model="form.phone" />
+              <input type="text" required v-model="form.phone" />
             </div>
             <div class="label">
               <p>Code promo</p>
@@ -58,25 +58,26 @@
             <div class="livraison_card" v-if="livraison">
               <div class="label">
                 <p>Adresse</p>
-                <input type="text" v-model="form.adresse" />
+                <input type="text" required v-model="form.adresse" />
               </div>
               <div class="label">
                 <p>Adresse complémentaire</p>
-                <input type="text" v-model="form.adresse_2" />
+                <input type="text" required v-model="form.adresse_2" />
               </div>
               <div class="label">
                 <p>Code Postal</p>
-                <input type="text" v-model="form.cp" />
+                <input type="text" required v-model="form.cp" />
               </div>
               <div class="label">
                 <p>Ville</p>
-                <input type="text" v-model="form.ville" />
+                <input type="text" required v-model="form.ville" />
               </div>
               <div class="label">
                 <p>Préférence livraison</p>
                 <input
                   type="text"
                   placeholder="14h-18h"
+                  required
                   v-model="form.heureLivraison"
                 />
               </div>

@@ -39,10 +39,10 @@ export default {
     return {
       categoriesblogs: await $strapi.find('blogcategories'),
       categoriesblog: matchingCategories[0],
-      blogsf: await $strapi.find('blogs?_limit=1', {
+      blogsf: await $strapi.find('blogs', {
         'blogcategory.slug': params.slug
       }),
-      blogs: await $strapi.find('blogs?_start=2', {
+      blogs: await $strapi.find('blogs', {
         'blogcategory.slug': params.slug
       })
     }

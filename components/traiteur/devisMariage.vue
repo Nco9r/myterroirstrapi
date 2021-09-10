@@ -50,8 +50,9 @@
           </div>
           <div class="label">
             <p>Type de prestations</p>
-            <select required id="mariage" value="" v-model="form.prestation">
-              <option value="mariage" selected>Mariage</option>
+            <select required v-model="form.prestation">
+             <option  selected value="">Choisir dans la liste</option>
+              <option value="Mariage">Mariage</option>
             </select>
           </div>
           <div class="label">

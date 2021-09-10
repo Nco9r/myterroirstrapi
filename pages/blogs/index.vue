@@ -342,7 +342,7 @@ a {
 }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
 
   .categories_blog {
   max-width: 1400px;

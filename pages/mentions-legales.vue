@@ -340,9 +340,16 @@ br {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .content_mentions {
-    padding: 100px 200px;
+    margin: 100px auto;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+ .content_mentions {
+    margin: 100px auto;
+    max-width: 1400px;
   }
 }
 </style>

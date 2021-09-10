@@ -136,7 +136,7 @@ button {
 @media screen and (min-width: 1024px) {
   .getBlog {
     max-width: 900px;
-    margin: 120px auto 650px auto;
+    margin: 120px auto 50px auto;
   }
 
   .card_first {
@@ -152,10 +152,10 @@ button {
     width: 60%;
     background-color: var(--black);
     height: 500px;
-    position: absolute;
+
     padding: 30px 30px 30px 60px;
     left: 0;
-    top: 50px;
+    top: 0;
     border-radius: 6px;
     z-index: 1;
   }
@@ -164,7 +164,7 @@ button {
     width: 70%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
+
     top: 50%;
     right: 0;
   }
@@ -224,7 +224,7 @@ button {
 @media screen and (min-width: 1200px) {
   .getBlog {
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 150px auto;
   }
 
   .card_first {
@@ -240,20 +240,19 @@ button {
     width: 50%;
     background-color: var(--orange);
     height: 500px;
-    position: absolute;
+  top: 50px;
     padding: 30px 30px 30px 60px;
-    left: 0;
-    top: 50px;
+position: absolute;
+
     border-radius: 6px;
     z-index: 1;
   }
 
   .block_img {
-    width: 70%;
+    width: 80%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
-    top: 50%;
+    margin-left: 270px;
     right: 0;
   }
 

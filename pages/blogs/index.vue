@@ -35,7 +35,7 @@ export default {
   async asyncData({ $strapi }) {
     return {
       blogs: await $strapi.find('blogs?_sort=id:DESC'),
-      blogsf: await $strapi.find('blogs?_id=1'),
+      blogsf: await $strapi.find('blogs?_limit=1'),
       categorieblogs: await $strapi.find('blogcategories')
     }
   },
@@ -334,7 +334,7 @@ a {
 
   .categories_blog {
   max-width: 1200px;
-  margin: 670px auto 70px auto;
+  margin: 70px auto 70px auto;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
@@ -346,7 +346,7 @@ a {
 
   .categories_blog {
   max-width: 1400px;
-  margin: 670px auto 70px auto;
+  margin: 70px auto 70px auto;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;

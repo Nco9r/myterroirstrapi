@@ -109,7 +109,7 @@ button {
 @media screen and (min-width: 1024px) {
   .getBlog {
     max-width: 1000px;
-    margin: 120px auto 650px auto;
+    margin: 120px auto 50px auto;
   }
 
   .card_first {
@@ -137,7 +137,6 @@ button {
     width: 70%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
     top: 50%;
     right: 0;
   }
@@ -221,10 +220,10 @@ button {
   }
 
   .block_img {
-    width: 70%;
+    width: 80%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
+    margin-left: 270px;
     top: 50%;
     right: 0;
   }

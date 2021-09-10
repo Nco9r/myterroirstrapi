@@ -159,7 +159,6 @@ export default {
     width: 70%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
     top: 50%;
     right: 0;
   }
@@ -214,7 +213,7 @@ export default {
 @media screen and (min-width: 1200px) {
   .getBlog {
     max-width: 1200px;
-    margin: 120px auto 700px auto;
+    margin: 120px auto 100px auto;
   }
 
   .card_first {
@@ -230,7 +229,7 @@ export default {
     width: 50%;
 
     height: 500px;
-    position: absolute;
+
     padding: 30px 30px 30px 60px;
     left: 0;
     top: 50px;
@@ -239,10 +238,10 @@ export default {
   }
 
   .block_img {
-    width: 70%;
+    width: 80%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
+    margin-left: 270px;
     top: 50%;
     right: 0;
   }
@@ -296,7 +295,7 @@ export default {
   @media screen and (min-width: 1600px) {
   .getBlog {
     max-width: 1400px;
-    margin: 120px auto 650px auto;
+    margin: 120px auto 100px auto;
   }
 
 }

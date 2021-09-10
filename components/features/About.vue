@@ -104,7 +104,7 @@ strong {
   .about {
     display: flex;
     flex-flow: row;
-    margin: 700px auto 100px auto;
+    margin: 50px auto 100px auto;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 900px;
@@ -163,7 +163,7 @@ strong {
 
   .about {
     max-width: 1200px;
-    margin: 700px auto 50px auto;
+    margin: 50px auto 50px auto;
   }
 }
 
@@ -174,7 +174,7 @@ strong {
 
   .about {
     max-width: 1400px;
-    margin: 750px auto 50px auto;
+    margin: 50px auto 50px auto;
   }
 }
 

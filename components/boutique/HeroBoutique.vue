@@ -154,7 +154,6 @@ export default {
     width: 70%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
     top: 50%;
     right: 0;
   }
@@ -232,20 +231,19 @@ export default {
     width: 50%;
     background-color: var(--black);
     height: 500px;
+    top: 0;
     position: absolute;
     padding: 30px 30px 30px 60px;
-    left: 0;
     top: 50px;
     border-radius: 6px;
     z-index: 1;
   }
 
-  .block_img {
-    width: 70%;
+    .block_img {
+    width: 80%;
     justify-content: flex-end;
     display: flex;
-    position: absolute;
-    top: 50%;
+    margin-left: 270px;
     right: 0;
   }
 

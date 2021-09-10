@@ -373,7 +373,7 @@ hr {
   .products_box {
     display: flex;
     max-width: 1200px;
-    margin: 750px auto 100px auto;
+    margin: 50px auto 100px auto;
     flex-flow: row wrap;
     height: 100%;
     justify-content: space-between;
@@ -513,7 +513,7 @@ hr {
   .products_box {
     display: flex;
     max-width: 1400px;
-    margin: 700px auto 100px auto;
+    margin: 50px auto 100px auto;
     flex-flow: row wrap;
     height: 100%;
     justify-content: space-between;

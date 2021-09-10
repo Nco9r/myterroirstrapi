@@ -108,7 +108,7 @@
         <div class="text">
           <p>Heure d'ouverture</p>
           <p>Lun - Ven : 9h/18h</p>
-          <p>Sam : 10h/17h</p>
+          <p>Sam : Fermé</p>
           <p>Dim : Fermé</p>
         </div>
       </div>

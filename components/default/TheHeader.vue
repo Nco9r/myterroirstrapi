@@ -70,10 +70,10 @@
               <nuxt-link to="/boutique">Boutique</nuxt-link>
             </div>
             <hr />
-            <div class="button_contact">
-              <button @click="(devis = !devis), (openMenu = !openMenu)">
+            <div class="button_contact" @click="openMenu = !openMenu">
+              <nuxt-link to="/contact"><button>
                 Obtenir mon devis
-              </button>
+              </button></nuxt-link>
             </div>
             <div class="sociaux">
               <p>NOUS SUIVRE</p>

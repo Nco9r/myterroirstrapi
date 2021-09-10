@@ -126,30 +126,50 @@ export default {
 
 @media screen and (min-width: 1024px) {
     .content_cookies {
-        width: 100%;
+        width: 20%;
         right: 20px;
         left: 0;
-        flex-flow: row;
-        align-items: center;
-
-     
-
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .content_cookies {
-        width: 80%;
+        flex-flow: column;
     }
 
     .button {
-        display: flex; 
-        flex-flow: row wrap;
-        width: 30%;
-    }
-    .next {
-        width: 100%;
-    }
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: space-between;
 }
+
+
+
+.next {
+    margin: 10px auto 0 auto;
+  background-color: var(--gray);
+  padding: 10px;
+  color: var(--black);
+  font-size: 10px;
+  width: 100%;
+  margin-right: 15px;
+  font-family: bodyBold, sans-serif;
+  border: none;
+
+    cursor: pointer;
+
+}
+
+.ok {
+    margin: 10px auto 0 auto;
+  background-color: var(--black);
+  padding: 10px;
+  color: var(--white);
+  font-size: 10px;
+  width: 95%;
+  font-family: bodyBold, sans-serif;
+  border: none;
+    cursor: pointer;
+
+
+}
+}
+
 
 </style>

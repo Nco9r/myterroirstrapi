@@ -243,7 +243,6 @@ button {
   top: 50px;
     padding: 30px 30px 30px 60px;
 position: absolute;
-
     border-radius: 6px;
     z-index: 1;
   }

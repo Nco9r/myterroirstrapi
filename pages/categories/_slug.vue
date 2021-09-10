@@ -39,7 +39,7 @@ export default {
     return {
       categoriesblogs: await $strapi.find('blogcategories'),
       categoriesblog: matchingCategories[0],
-      blogsf: await $strapi.find('blogs', {
+      blogsf: await $strapi.find('blogs?_limit=1&_sort=categorie', {
         'blogcategory.slug': params.slug
       }),
       blogs: await $strapi.find('blogs', {
@@ -346,7 +346,7 @@ a {
 
   .categories_blog {
   max-width: 1400px;
-  margin: 670px auto 70px auto;
+  margin: 50px auto 70px auto;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;

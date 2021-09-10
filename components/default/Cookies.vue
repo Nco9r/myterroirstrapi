@@ -1,15 +1,12 @@
 <template>
   <div class="cookies" v-if="cook">
       <div class="content_cookies">
-          <div class="title_cookies">
-              <h3>Respect de votre vie privée</h3>
-          </div>
           <div class="content">
-              <p>Avec votre accord, nous utilisons des cookies ou technologies similaires pour stocker et accéder à des informations personnelles comme votre visite sur ce site. Vous pouvez retirer votre consentement ou vous opposer aux traitements basés sur l'intérêt légitime à tout moment en cliquant sur "En savoir plus" ou dans les mentions légales de ce site.</p>
+              <p>Coucou, c'est nous les cookies ! <br><span class="light">(Promis vous nous trouverez qu'ici...)</span></p>
           </div>
           <div class="button">
-              <nuxt-link to=/mentions-legales><button class="next" @click="cook = !cook">En savoir plus</button></nuxt-link>
-              <button class="ok" @click="valide">Accepter et fermer</button>
+              <button class="next" @click="cook = !cook">En savoir plus</button>
+              <button class="ok" @click="valide">Accepter</button>
           </div>
       </div>
   </div>
@@ -38,27 +35,30 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.light {
+    font-size: 10px;
+    font-family: bold, sans-serif;
+    color: var(--Body);
+}
 
 .cookies {
     overflow-y: scroll; 
 }
 
 .content_cookies {
-    width: 90%;
+    width: 100%;
     position: fixed; 
     display: flex; 
     left: 0;
     right: 0;
-    flex-flow: row wrap;
-    margin: 20px auto;
-    padding: 30px 20px 20px 30px;
-    border-radius: 3Px;
-    box-shadow: 0 0 10px rgba(70, 70, 70, 0.185); 
-    bottom: 20px;
+    bottom: 0;
+    flex-flow: column;
+    margin: 0px auto;
+    padding: 30px 15px 20px 15px; 
     overflow-y: scroll!important;
-    z-index: 30000; 
-    background-color: var(--white);
+    z-index: 300; 
+    background-color: var(--gray-light);
 }
 
 .logo_cookies {
@@ -72,11 +72,12 @@ export default {
 
 .content p {
     font-weight: 400;
-    line-height: 26Px;
+    line-height: 22Px;
     color: var(--black);
     margin-bottom: 10px;
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: bodyBold, sans-serif;
     margin-top: 5px;
 }
 
@@ -87,17 +88,21 @@ export default {
 
 .button {
     display: flex; 
-    flex-flow: column; 
-    width: 100%;
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 
 .next {
     margin: 10px auto 0 auto;
   background-color: var(--gray);
-  padding: 10px 28px;
+  padding: 10px;
   color: var(--black);
-  font-size: 14px;
-  width: 100%;
+  font-size: 10px;
+  width: 55%;
+  margin-right: 15px;
   font-family: bodyBold, sans-serif;
   border: none;
 
@@ -107,11 +112,11 @@ export default {
 
 .ok {
     margin: 10px auto 0 auto;
-  background-color: var(--orange);
-  padding: 10px 28px;
+  background-color: var(--black);
+  padding: 10px;
   color: var(--white);
-  font-size: 14px;
-  width: 100%;
+  font-size: 10px;
+  width: 95%;
   font-family: bodyBold, sans-serif;
   border: none;
     cursor: pointer;
@@ -124,6 +129,8 @@ export default {
         width: 100%;
         right: 20px;
         left: 0;
+        flex-flow: row;
+        align-items: center;
 
      
 
@@ -137,13 +144,9 @@ export default {
 
     .button {
         display: flex; 
-        flex-flow: column-reverse;
+        flex-flow: row wrap;
         width: 30%;
     }
-
-    .button a {
-    }
-
     .next {
         width: 100%;
     }

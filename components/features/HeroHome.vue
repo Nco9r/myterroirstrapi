@@ -96,7 +96,7 @@ export default {
   color: var(--black);
   font-family: bodyBold, sans-serif;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 14px;
 }
 

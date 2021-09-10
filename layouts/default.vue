@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader/>
-    <!-- <Cookies/> -->
+    <Cookies/>
     <nuxt />
     <TheFooter/>
   </div>
@@ -10,13 +10,13 @@
 <script>
 import TheHeader from '../components/default/TheHeader'
 import TheFooter from '../components/default/TheFooter'
-// import Cookies from '../components/default/Cookies'
+import Cookies from '../components/default/Cookies'
 
 export default {
   components: {
     TheHeader,
     TheFooter,
-    // Cookies
+    Cookies
   }
 }
 </script>

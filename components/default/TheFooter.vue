@@ -218,6 +218,11 @@ a {
     justify-content: space-between;
   }
 
+  .block_footer {
+  max-width: 900px;
+  margin: auto;
+}
+
 
 
   .icons_sociaux_desktop {
@@ -278,7 +283,7 @@ a {
     padding: 50px 0px 0px 0px;
   }
 .block_footer {
-  max-width: 1800px!important;
+  max-width: 1400px;
   margin: auto;
 
 }

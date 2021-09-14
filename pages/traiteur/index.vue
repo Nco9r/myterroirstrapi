@@ -895,7 +895,7 @@ export default {
 }
 
 strong {
-  color: var(--black);
+  color: var(--Body);
 }
 
 .nb img {

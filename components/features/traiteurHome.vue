@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 strong {
-  font-family: bodyBold, sans-serif;
+  color: var(--Body);
 }
 
 .about {
@@ -63,7 +63,7 @@ strong {
 }
 
 .about_content p {
-  color: var(--black);
+  color: var(--Body);
   font-size: 14px;
   margin-top: 20px;
   line-height: 26px;
@@ -116,13 +116,13 @@ strong {
 
 
 @media screen and (min-width: 1024px) {
-  .about {
+ .about {
     display: flex;
     flex-flow: row-reverse;
-    margin: 70px auto;
+    margin: 50px auto 50px auto;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1188px;
+    max-width: 900px;
   }
 
   .about_content {
@@ -130,7 +130,7 @@ strong {
   }
 
   .about_content h2 {
-      width: 500px;
+      width: 400px;
       font-size: 32px; 
       line-height: 44px;
   }
@@ -138,7 +138,7 @@ strong {
   .about_content p {
       font-size: 14px; 
       line-height: 26px;
-      width: 450px;
+      width: 350px;
   }
 
   .about_img {
@@ -157,7 +157,7 @@ strong {
     z-index: -1;
     top: 0;
     bottom: 0;
-    left: -44px;
+    right: -44px;
     width: 52%;
     background-color: var(--orange);
     -webkit-transform: translateY(10%);

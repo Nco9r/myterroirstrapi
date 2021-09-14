@@ -67,7 +67,6 @@ hr {
 @media screen and (min-width: 1024px) {
 
     .clients {
-        padding: 10px 100px 80px 100px;
         max-width: 1250px;
         margin: auto;
     }

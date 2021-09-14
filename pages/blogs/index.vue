@@ -316,6 +316,16 @@ a {
     max-width: 900px;
     margin: auto;
   }
+
+
+  .categories_blog {
+  max-width: 900px;
+  margin: 70px auto 70px auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
   .title_section h2 {
     font-size: 28px;
     background-size: 100%;

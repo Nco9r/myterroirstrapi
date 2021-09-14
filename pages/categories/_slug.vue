@@ -1,6 +1,6 @@
 <template>
   <main>
-    <blogFirst :blogsf="blogsf" />
+    <blogCategorie :blogslimit="blogslimit" />
     <div class="categories_blog">
       <hr>
       <div class="title_categorie">
@@ -29,7 +29,7 @@ import HeroBis from '../../components/features/HeroBis'
 import {getStrapiMedia} from '../../utils/medias'
 import Newsletter from '../../components/default/Newsletter'
 import blog from '../../components/blog/blog'
-import blogFirst from '../../components/blog/blogFirst'
+import blogCategorie from '../../components/blog/blogCategorie'
 
 export default {
   async asyncData({ $strapi, params }) {
@@ -39,7 +39,7 @@ export default {
     return {
       categoriesblogs: await $strapi.find('blogcategories'),
       categoriesblog: matchingCategories[0],
-      blogsf: await $strapi.find('blogs?_limit=1&_sort=categorie', {
+      blogslimit: await $strapi.find('blogs?_limit=1&_sort=categories', {
         'blogcategory.slug': params.slug
       }),
       blogs: await $strapi.find('blogs', {
@@ -50,7 +50,7 @@ export default {
   components: {
     HeroBis,
     blog,
-    blogFirst,
+    blogCategorie,
     Newsletter
   },
   data() {
@@ -336,6 +336,15 @@ a {
     margin-left: 50px;
     margin-bottom: 90px;
   }
+
+    .categories_blog {
+  max-width: 900px;
+  margin: 50px auto 70px auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
   .card {
     margin-right: 30px;

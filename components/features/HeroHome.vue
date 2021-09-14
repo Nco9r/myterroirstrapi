@@ -134,9 +134,9 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
-  .getBlog {
+   .getBlog {
     max-width: 900px;
-    margin: 120px auto 50px auto;
+    margin: 120px auto 100px auto;
   }
 
   .card_first {
@@ -150,12 +150,12 @@ button {
     display: flex;
     flex-flow: column;
     width: 60%;
-    background-color: var(--black);
-    height: 500px;
 
+    height: 500px;
+    position: absolute;
     padding: 30px 30px 30px 60px;
     left: 0;
-    top: 0;
+    top: 50px;
     border-radius: 6px;
     z-index: 1;
   }
@@ -164,9 +164,9 @@ button {
     width: 70%;
     justify-content: flex-end;
     display: flex;
-
     top: 50%;
     right: 0;
+    margin-left: 270px;
   }
 
   .block_img img {
@@ -178,46 +178,40 @@ button {
 
   .categorie {
     text-transform: uppercase;
-    color: var(--orange);
+
     font-family: bodyBold, sans-serif;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
-  .block_content h2 {
-      font-family: title, sans-serif;
+  .block_content h1 {
+          font-family: title, sans-serif;
 
-    width:400px;
-    color: var(--white);
+    width: 400px;
+ 
     line-height: 42px;
     margin-bottom: 30px;
     font-size: 32px;
   }
 
   .description {
-    font-size: 16px;
+    font-size: 18px;
     width: 400px;
     line-height: 32px;
     font-family: body, sans-serif;
-    color: var(--white);
+  
     margin-bottom: 30px;
   }
 
-  .datetime {
-    font-size: 12px;
-    font-family: body, sans-serif;
-    color: var(--white);
-    margin-bottom: 40px;
-  }
-
   button {
-    background-color: var(--black);
-    padding: 10px 48px;
-    color: var(--white);
-    font-size: 16px;
-    cursor: pointer;
-    font-family: bodyBold;
-    border: none;
+
+  padding: 10px 48px;
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  font-family: bodyBold;
+  border: none;
+
   }
 }
 

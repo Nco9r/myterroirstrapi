@@ -88,7 +88,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Produits artisanaux et cuisine de terroir.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Distributeur de produits authentiques pour les professionnels et particuliers."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Produits artisanaux et cuisine de terroir.","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"Produits artisanaux et cuisine de terroir | MyTerroir","name":"Produits artisanaux et cuisine de terroir | MyTerroir","content":" My Terroir s'est spécialisé dans la sélection et la livraison à domicile sur Bordeaux de produits de terroir , fromages et charcuteries de qualités. Tous nos produits sont choisis minutieusement auprès d’artisans.","keywords":"Produits de terroir Bordeaux, Produits de terroir, Produits du terroir, Bordeaux, Traiteur-Bordeaux, Produits de terroir, My terroir, charcuterie, charcuteries, fromage, fromages, viandes, viande, brasero, plancha, mariages, cocktails, buffets, repas"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     store,
     router,

@@ -112,7 +112,7 @@ text-decoration: underline;
 
 @media screen and (min-width: 1024px) {
   .blogCard {
-    width: 25%;
+    width: 32%;
     padding: 0;
   }
 

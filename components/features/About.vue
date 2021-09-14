@@ -34,8 +34,7 @@ export default {
 <style scoped>
 
 strong {
-  font-family: body, sans-serif;
-  color: var(--strong);
+  color: var(--Body);
 }
 .about {
   display: flex;
@@ -106,7 +105,7 @@ strong {
   .about {
     display: flex;
     flex-flow: row;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 50px auto;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 900px;
@@ -125,7 +124,7 @@ strong {
   .about_content p {
       font-size: 14px; 
       line-height: 26px;
-      width: 450px;
+      width: 350px;
   }
 
   .about_img {

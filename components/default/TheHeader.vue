@@ -471,7 +471,7 @@ hr {
   }
 
   .block_header {
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
     padding: 20px 0;
   }

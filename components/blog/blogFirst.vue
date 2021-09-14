@@ -108,7 +108,7 @@ button {
 
 @media screen and (min-width: 1024px) {
   .getBlog {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 120px auto 50px auto;
   }
 
@@ -123,10 +123,9 @@ button {
     display: flex;
     flex-flow: column;
     width: 60%;
-    background-color: var(--black);
+    background-color: var(--white);
     height: 500px;
     position: absolute;
-    padding: 30px 30px 30px 60px;
     left: 0;
     top: 50px;
     border-radius: 6px;
@@ -137,6 +136,7 @@ button {
     width: 70%;
     justify-content: flex-end;
     display: flex;
+    margin-left: 270px;
     top: 50%;
     right: 0;
   }
@@ -158,7 +158,7 @@ button {
 
   .block_content h2 {
     font-family: bodyBold, sans-serif;
-    width: 500px;
+    width: 400px;
     color: var(--black);
     line-height: 42px;
     margin-bottom: 30px;
@@ -167,7 +167,7 @@ button {
 
   .description {
     font-size: 18px;
-    width: 500px;
+    width: 400px;
     line-height: 32px;
     font-family: body, sans-serif;
     color: var(--Body);

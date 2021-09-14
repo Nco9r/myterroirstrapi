@@ -98,6 +98,24 @@ a {
   color: var(--Body);
 }
 
+@media screen and (min-width: 1024px) {
+  .actus {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0;
+  }
+
+  .actus h2 {
+  font-size: 32px;
+  line-height: 46px;
+}
+
+  .actus p {
+    font-size: 14px;
+    color: var(--Body);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .actus {
     max-width: 1200px;

@@ -149,6 +149,63 @@ hr {
    background-color: var(--black);
 }
 
+@media screen and (min-width: 1024px) {
+
+   section {
+       padding-bottom: 100px;
+        
+   } 
+
+  .commande_title {
+      display: flex; 
+        max-width: 900px;
+        margin: 50px auto; 
+      flex-flow: column;
+      text-align: center;
+      justify-content: flex-start; 
+  }
+
+  .commande_title h2{
+    width: 900px;
+    margin: auto;
+    font-size: 32px; 
+    line-height: 46px; 
+  }
+
+  .commande_title p {
+      font-size: 28px;
+      background-size: 100%;
+      width: 400px;
+      margin: 20px auto; 
+  }
+
+  .commande_wrapper {
+    background-color: var(--beige);
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    padding: 0 90px;
+    margin: auto;
+    margin-top: 150px;
+    background-image: url('~assets/img/png/texture.png');
+    background-repeat: repeat;
+    background-size: 40%;
+    border-radius: 4px;
+    padding-bottom: 40px;
+  }
+
+  .items_commande {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: -100px;
+  }
+
+  .items {
+    width: 30%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
 
    section {

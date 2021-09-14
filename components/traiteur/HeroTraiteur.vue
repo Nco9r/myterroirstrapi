@@ -130,8 +130,8 @@ export default {
 
   @media screen and (min-width: 1024px) {
   .getBlog {
-    max-width: 1000px;
-    margin: 120px auto 650px auto;
+    max-width: 900px;
+    margin: 120px auto 50px auto;
   }
 
   .card_first {
@@ -160,6 +160,7 @@ export default {
     justify-content: flex-end;
     display: flex;
     top: 50%;
+    margin-left: 270px;
     right: 0;
   }
 
@@ -175,13 +176,13 @@ export default {
 
     font-family: bodyBold, sans-serif;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .block_content h1 {
           font-family: title, sans-serif;
 
-    width: 500px;
+    width: 400px;
  
     line-height: 42px;
     margin-bottom: 30px;
@@ -190,7 +191,7 @@ export default {
 
   .description {
     font-size: 18px;
-    width: 500px;
+    width: 400px;
     line-height: 32px;
     font-family: body, sans-serif;
   

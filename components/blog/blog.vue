@@ -44,8 +44,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   .cards {
-    max-width: 850px;
+    max-width: 900px;
     margin: 20px auto;
+    justify-content: space-between;
   }
 
 }

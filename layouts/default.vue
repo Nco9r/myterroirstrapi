@@ -69,8 +69,9 @@ html {
 
 :root {
   --black: #282522;
+  --strong: #3B3938;
   --orange: #E5521A; 
-  --Body: #3f3f3f;
+  --Body: #6C6865;
   --beige: #C99C78;
   --white: #FFF; 
   --gray-light: #f3f3f3;

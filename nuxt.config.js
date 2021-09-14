@@ -1,64 +1,67 @@
-const strapiBaseUri = process.env.API_URL || 'https://admin-myterroir.fr/'
+const strapiBaseUri = process.env.API_URL || "https://admin-myterroir.fr/";
 
 module.exports = {
-  target: 'static',
-  buildDir: 'nuxt-dist',
+  target: "static",
+  buildDir: "nuxt-dist",
   env: {
     strapiBaseUri,
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: 'Produits artisanaux et cuisine de terroir.',
+    title: "Produits artisanaux et cuisine de terroir.",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "Produits artisanaux et cuisine de terroir | MyTerroir",
+        name: "Produits artisanaux et cuisine de terroir | MyTerroir",
+        content:
+       " My Terroir s'est spécialisé dans la sélection et la livraison à domicile sur Bordeaux de produits de terroir , fromages et charcuteries de qualités. Tous nos produits sont choisis minutieusement auprès d’artisans.",
+        keywords:
+          "Produits de terroir Bordeaux, Produits de terroir, Produits du terroir, Bordeaux, Traiteur-Bordeaux, Produits de terroir, My terroir, charcuterie, charcuteries, fromage, fromages, viandes, viande, brasero, plancha, mariages, cocktails, buffets, repas",
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
   /*
-  ** Global CSS
-  */
-  css: ['vue-slick-carousel/dist/vue-slick-carousel.css',
-  '~/assets/main.css'
+   ** Global CSS
+   */
+  css: ["vue-slick-carousel/dist/vue-slick-carousel.css", "~/assets/main.css"],
+  /*
+   ** Plugins to load before mounting the App
+   */
+  plugins: [
+    { src: "./plugins/vue-slick-carousel.js" },
+    { src: "./plugins/vuefilter.js" },
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
- plugins: [{ src: './plugins/vue-slick-carousel.js' },
- { src: './plugins/vuefilter.js'}
-],
 
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: [],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/strapi',
-    '@nuxtjs/pwa',
-    'cookie-universal-nuxt',
-    '@nuxtjs/dotenv',
-    '@nuxtjs/markdownit',
+    "@nuxtjs/axios",
+    "@nuxtjs/strapi",
+    "@nuxtjs/pwa",
+    "cookie-universal-nuxt",
+    "@nuxtjs/dotenv",
+    "@nuxtjs/markdownit",
     // '@nuxtjs/strapi'
   ],
 
   strapi: {
     url: strapiBaseUri,
-    entities: ['producteur', 'blogs', 'categoriesblogs'],
+    entities: ["producteur", "blogs", "categoriesblogs"],
   },
 
   markdownit: {
@@ -69,19 +72,17 @@ module.exports = {
     html: true,
   },
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
-}
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
+  },
+};

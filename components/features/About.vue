@@ -34,8 +34,8 @@ export default {
 <style scoped>
 
 strong {
-  font-family: bodyBold, sans-serif; 
-  color: var(--black);
+  font-family: body, sans-serif;
+  color: var(--strong);
 }
 .about {
   display: flex;
@@ -64,6 +64,8 @@ strong {
 .about_content p {
   color: var(--Body);
   font-size: 14px;
+  font-family: body, sans-serif;
+
   margin-top: 20px;
   line-height: 28px;
 }

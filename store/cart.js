@@ -36,7 +36,7 @@ export const mutations = {
     deleteOne(state, id) {
         const index = state.datas.findIndex( d => d.id === id);
         state.datas.splice(index, 1);
-    }
+    },
 }
 
 export const actions = {

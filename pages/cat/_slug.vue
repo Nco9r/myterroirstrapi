@@ -315,6 +315,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  pointer-events: all;
   cursor: pointer;
   position: absolute;
   top: 10px;

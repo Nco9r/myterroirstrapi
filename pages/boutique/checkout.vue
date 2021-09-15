@@ -116,7 +116,7 @@
           </div>
             <div class="cta_cart">
               <nuxt-link to="/boutique">Retour</nuxt-link>
-              <button :class="{pointer : !checkbox}">Confirmer</button>
+              <button :class="{pointer : !checkbox}">Commandez</button>
             </div>
           </div>
         </form>

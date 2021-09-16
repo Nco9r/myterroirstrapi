@@ -4,12 +4,12 @@
       <h2>dénicheur de <span>produits</span> authentiques.</h2>
       <hr />
       <p>
-        Notre secret : de bons <strong>produits</strong> achetés directement aux <strong>producteurs</strong>, une
-        équipe <strong>passionnée</strong>, motivée et quelques bons <strong>livres</strong> de grand-mères. Bon
-        on avoue : il nous aura fallu 5 ans, <strong>beaucoup de travail</strong>, de nombreux
-        <strong>voyages</strong> et autant de rencontres pour pouvoir vous proposer en toute
-        humilité notre <strong>expertise</strong> en la matière. Pourquoi chercher compliqué
-        quand nous pouvons vous <strong>régaler en toute simplicité!</strong>
+        Notre secret : de bons produits achetés directement aux producteurs, une
+        équipe passionnée, motivée et quelques bons livres de grand-mères. Bon
+        on avoue : il nous aura fallu 5 ans, beaucoup de travail, de nombreux
+        voyages et autant de rencontres pour pouvoir vous proposer en toute
+        humilité notre expertise en la matière. Pourquoi chercher compliqué
+        quand nous pouvons vous régaler en toute simplicité!
       </p>
       <nuxt-link to='/boutique'>
       <button>

@@ -4,16 +4,16 @@
       <h2>Le service traiteur de my terroir</h2>
       <hr />
       <p>
-        Cassez les <strong>codes</strong>, choisissez un
-        <strong>traiteur</strong> sur <strong>Bordeaux</strong> pas comme les
-        autres qui vous propose une sélection de <strong>produits</strong> de
-        <strong>qualité</strong> dénichée chez des
-        <strong>producteurs</strong> artisanaux en France, Espagne et en Italie.
-        Vous <strong>organisez</strong> votre mariage, un anniversaire ou
+        Cassez les codes, choisissez un
+        traiteur sur Bordeaux pas comme les
+        autres qui vous propose une sélection de produits de
+        qualité dénichée chez des
+        producteurs artisanaux en France, Espagne et en Italie.
+        Vous organisez votre mariage, un anniversaire ou
         simplement des retrouvailles entre copains.
-        <strong>Choisissez</strong> avec nous les produits qui s’accorderont au
-        mieux avec votre <strong>événement</strong>. Nous pouvons nous occuper
-        des <strong>services</strong> complémentaires comme la vaisselle ou le
+        Choisissez avec nous les produits qui s’accorderont au
+        mieux avec votre événement. Nous pouvons nous occuper
+        des services complémentaires comme la vaisselle ou le
         mobilier.
       </p>
       <nuxt-link to="/traiteur"

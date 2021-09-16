@@ -10,12 +10,12 @@
           <div class="content_title">
             <p>Événements</p>
             <p>
-              Vous organisez votre <strong>mariage</strong>, un
-              <strong>anniversaire</strong> ou simplement des
-              <strong>retrouvailles</strong> entre copains ? Choisissez avec
-              nous les <strong>produits</strong> qui s’accorderont au mieux avec
-              votre <strong>événement</strong>. Nous pouvons nous occuper des
-              <strong>services</strong> complémentaires comme la vaisselle ou le
+              Vous organisez votre mariage, un
+              anniversaire ou simplement des
+              retrouvailles entre copains ? Choisissez avec
+              nous les produits qui s’accorderont au mieux avec
+              votre événement. Nous pouvons nous occuper des
+              services complémentaires comme la vaisselle ou le
               mobilier.
             </p>
           </div>

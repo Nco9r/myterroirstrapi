@@ -71,7 +71,7 @@ html {
   --black: #282522;
   --strong: #3B3938;
   --orange: #E5521A; 
-  --Body: #6C6865;
+  --Body: #555555;
   --beige: #C99C78;
   --white: #FFF; 
   --gray-light: #f3f3f3;

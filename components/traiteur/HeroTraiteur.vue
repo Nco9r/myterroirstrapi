@@ -5,7 +5,7 @@
         <div class="title_blog">
           <p class="categorie">Traiteur</p>
           <h1>Le service traiteur de <span class="black">My Terroir</span></h1>
-          <p class="description">Cassez les codes, choisissez un traiteur sur Bordeaux pas comme les autres pour vos mariages, séminaires, cocktails et buffets. Étonné tous vos convives grâce aux équipes et produits MyTerroir.</p>
+          <p class="description">Cassez les codes, choisissez un traiteur sur Bordeaux pas comme les autres pour vos mariages, séminaires, cocktails et buffets. Étonnez tous vos convives grâce aux équipes et produits MyTerroir.</p>
          <button>Scroll</button>
         </div>
       </div>

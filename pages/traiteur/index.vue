@@ -402,7 +402,7 @@
           <p>
             Le barbecue gastronomique étant un art à part entière, et les tarifs
             pouvant varier de <strong>25€ à 100€ par personne</strong>, nous
-            préférons souvent nous rencontrer afin de discuter de vos
+            préférons souvent vous rencontrer afin de discuter de vos
             désidératas avant de vous préparer un devis.
           </p>
 
@@ -533,7 +533,7 @@
         <div class="card_name">
           <div class="title_name_card">
             <span></span>
-            <h3>Repas et Grillade</h3>
+            <h3>Repas et Grillades</h3>
           </div>
           <p @click="grillade = !grillade">Retour</p>
         </div>
@@ -558,7 +558,7 @@
         </div>
         <div class="content_card_intro">
           <p>
-           Une prestation haut de gamme que vous n’êtes pas prêt d’oublier : nous venons avec plus de personnel pour le service, nous présentons les viandes fraîches à table avant cuisson, les épices et accompagnements choisis, nous faisons du show-co- oking sur place, découpes des viandes en salle, plusieurs repasses en service. Nous avons déjà réalisé ces formules pour des mariages chic dans des demeures d’exception, demandez-nous toutes les folies nous savons vous les réaliser. Toujours sur devis personnalisé
+           Une prestation haut de gamme que vous n’êtes pas prêt d’oublier : nous venons avec plus de personnel pour le service, nous présentons les viandes fraîches à table avant cuisson, les épices et accompagnements choisis, nous faisons du show-coooooooooking sur place, découpes des viandes en salle, plusieurs repasses en service. Nous avons déjà réalisé ces formules pour des mariages chic dans des demeures d’exception, demandez-nous toutes les folies nous savons vous les réaliser. Toujours sur devis personnalisé
           </p>
           <p class="nb">
             <img src="~assets/img/svg/service.svg" alt="" />

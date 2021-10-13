@@ -6,8 +6,8 @@
       <p>
         Cassez les codes, choisissez un
         traiteur sur Bordeaux pas comme les
-        autres qui vous propose une sélection de produits de
-        qualité dénichée chez des
+        autres. Nous vous proposons une sélection de produits de
+        qualité dénichés chez des
         producteurs artisanaux en France, Espagne et en Italie.
         Vous organisez votre mariage, un anniversaire ou
         simplement des retrouvailles entre copains.

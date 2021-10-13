@@ -8,7 +8,7 @@
           <p class="description">
             Depuis 2016, My Terroir s’est spécialisé dans la sélection et la
             livraison à domicile de produits de terroir , fromages et
-            charcuteries de qualités. Tous nos produits sont choisis
+            charcuteries de qualité. Tous nos produits sont choisis
             minutieusement auprès d’artisans.
           </p>
           <nuxt-link to='/boutique'>

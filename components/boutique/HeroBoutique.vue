@@ -4,7 +4,7 @@
       <div class="block_content">
         <div class="title_blog">
           <p class="categorie">Boutique</p>
-          <h2>Tous nos produits à porter de clic !</h2>
+          <h2>Tous nos produits à portée de clic !</h2>
           <p class="description">Retrouvez la liste de nos produits de terroir que nous avons spécialement sélectionné pour vous. Charcuteries, viandes, fromages il y en a pour tous les gôuts.</p>
          <button>Scroll</button>
         </div>
